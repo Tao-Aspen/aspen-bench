@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "source_commit": "5822b0b24142e0c2402509bcb2e32ccebec55c6a",
+  "frozen_on": "2026-10-22",
+  "tasks": [
+    {
+      "id": "01-prompt-management",
+      "title": "Prompt management and publishing",
+      "status": "ready"
+    },
+    {
+      "id": "02-blind-transfer",
+      "title": "Blind transfer from scripts",
+      "status": "ready"
+    },
+    {
+      "id": "03-outbound-calling",
+      "title": "Outbound calling platform and answering machine detection",
+      "status": "ready"
+    },
+    {
+      "id": "04-schema-compatibility",
+      "title": "Database compatibility gate",
+      "status": "planned"
+    },
+    {
+      "id": "05-script-chat",
+      "title": "Script-aware conversational tester",
+      "status": "planned"
+    },
+    {
+      "id": "06-internal-logging",
+      "title": "Internal logging platform",
+      "status": "planned"
+    },
+    {
+      "id": "07-transfer-notetaker",
+      "title": "Live-transfer notetaker",
+      "status": "planned"
+    },
+    {
+      "id": "08-multilingual",
+      "title": "Multilingual conversation stack",
+      "status": "planned"
+    },
+    {
+      "id": "09-agentic-billing",
+      "title": "AI employee billing",
+      "status": "planned"
+    },
+    {
+      "id": "10-lookup-migrations",
+      "title": "Deterministic lookup-key migrations",
+      "status": "planned"
+    }
+  ]
+}

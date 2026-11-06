@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+private/
+workspaces/
+runs/
+tasks/*/baseline.bundle
+tasks/*/snapshot.json
+.venv/
+.bootstrap-*/
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/

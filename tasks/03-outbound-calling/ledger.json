@@ -1,0 +1,758 @@
+{
+  "task": "03-outbound-calling",
+  "note": "Linked PRs verified reachable from the frozen main branch. These are provenance anchors, not a patch to apply wholesale. Unrelated changes and earlier superseded approaches do not define requirements. Read final reference code for current behavior. Some historical issues were moved between teams and their IDs differ from branch names.",
+  "projects": [
+    {
+      "id": "P-PLA-593",
+      "name": "Build Outbound Call Backend Functionality",
+      "url": "https://linear.app/aspen-ai/project/build-outbound-call-backend-functionality-16e0cba0e122",
+      "status_at_freeze": "In Progress",
+      "completed_issue_count": 14
+    },
+    {
+      "id": "P-ENG-609",
+      "name": "Inbound vs. Outbound Agents",
+      "url": "https://linear.app/aspen-ai/project/inbound-vs-outbound-agents-edcaad388c32",
+      "status_at_freeze": "In Progress",
+      "completed_issue_count": 24
+    },
+    {
+      "id": "P-ENG-611",
+      "name": "Answering Machine Detection",
+      "url": "https://linear.app/aspen-ai/project/answering-machine-detection-f46780b734f4",
+      "status_at_freeze": "In Progress",
+      "completed_issue_count": 13
+    },
+    {
+      "id": "P-ENG-592",
+      "name": "Build Frontend Portal to Trigger Outbound Call",
+      "url": "https://linear.app/aspen-ai/project/build-frontend-portal-to-trigger-outbound-call-600abc1d72d5",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 13
+    },
+    {
+      "id": "P-ENG-652",
+      "name": "Assigning Numbers and Making Outbound Calls",
+      "url": "https://linear.app/aspen-ai/project/assigning-numbers-and-making-outbound-calls-f5e5416fc216",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 5
+    }
+  ],
+  "commits": [
+    {
+      "commit": "7e10c37369e1094094553faa48046a1e60c7a99e",
+      "date": "2026-09-14",
+      "subject": "Merge pull request #1871 from aspen-ai-org/tao/pla-6430-split-up-livekitcallorchestrator-execution",
+      "pr": 1871,
+      "issues": [
+        "PLA-6430"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1871",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "10df4ff23bb176ebc4b2319d68fb55bf218d3673",
+      "date": "2026-09-15",
+      "subject": "Merge pull request #1877 from aspen-ai-org/david/pla-6429-create-bot-route-and-types-for-outbound-calling",
+      "pr": 1877,
+      "issues": [
+        "PLA-6429"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1877",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "33a674e05173a67303678c0df497a671e3849a74",
+      "date": "2026-09-21",
+      "subject": "Merge pull request #1909 from aspen-ai-org/david/pro-6062-update-makeoutboundcall-route-to-fire-and-forget-background",
+      "pr": 1909,
+      "issues": [
+        "PRO-6062"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1909",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "68a69b279cbac282eb314e41a5b79215df460187",
+      "date": "2026-09-25",
+      "subject": "Merge pull request #1919 from aspen-ai-org/david/pro-6063-rename-and-update-activecallsessionstracker-and",
+      "pr": 1919,
+      "issues": [
+        "PRO-6063"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1919",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "61e4552982911b29eedc545de144cfbb144ef090",
+      "date": "2026-09-25",
+      "subject": "Merge pull request #2006 from aspen-ai-org/tao/pro-6071-implement-staroutboundbotcall-within-aspenaibotclient",
+      "pr": 2006,
+      "issues": [
+        "PRO-6071"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2006",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bd515ec82090ef76f62bcabc916bd1ffee51c4fb",
+      "date": "2026-09-30",
+      "subject": "Merge pull request #2035 from aspen-ai-org/tao/pro-6075-finish-the-aspenaibotclient-outbound-bot-call-contract",
+      "pr": 2035,
+      "issues": [
+        "PRO-6075"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2035",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "fdd4171140411e5acf0d9638e9b7b30436680ea9",
+      "date": "2026-09-30",
+      "subject": "Merge pull request #2012 from aspen-ai-org/tao/pro-6074-prepare-livekitcallorchestrator-for-multiple-call-types",
+      "pr": 2012,
+      "issues": [
+        "PRO-6074"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2012",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1dc59bf65a33e61e5e4bc4a813abb42793f03b27",
+      "date": "2026-10-05",
+      "subject": "Merge pull request #2023 from aspen-ai-org/tao/pro-6076-dial-outbound-bot-calls-from-livekitcallorchestrator",
+      "pr": 2023,
+      "issues": [
+        "PRO-6076"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2023",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "c5803369cc78fb4391c575b281c51950cb3ea6cc",
+      "date": "2026-10-08",
+      "subject": "Merge pull request #1937 from aspen-ai-org/david/core-23385-fix-active-call-counting-race-condition-in-graceful-shutdown",
+      "pr": 1937,
+      "issues": [
+        "PRO-6078"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1937",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "317147bfcc51da1e3c568488413b362b592f0e83",
+      "date": "2026-10-14",
+      "subject": "Merge pull request #2034 from aspen-ai-org/david/core-23499-create-generic-background-task-runner",
+      "pr": 2034,
+      "issues": [
+        "PRO-6079"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2034",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "c6a3efdaacbab58acb6197a106d6ced454ed7c61",
+      "date": "2026-09-23",
+      "subject": "Merge pull request #1938 from aspen-ai-org/abhinav/eng-1264-create-the-new-field-isoutbound-and-ensure-duplicate",
+      "pr": 1938,
+      "issues": [
+        "ENG-1264"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1938",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "48042888e50dfa615bafd9cd17c8b717274c61ee",
+      "date": "2026-09-23",
+      "subject": "Merge pull request #1940 from aspen-ai-org/abhinav/eng-1255-split-aiagent-table-shared-base-for-inbound-subclass",
+      "pr": 1940,
+      "issues": [
+        "ENG-1255"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1940",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "398949e6b85ecfd3fd8bc3aaad9ed521f1aae0b2",
+      "date": "2026-09-24",
+      "subject": "Merge pull request #1998 from aspen-ai-org/abhinav/eng-1311-rename-aiagenttableentity-aiagenttableentitybase",
+      "pr": 1998,
+      "issues": [
+        "ENG-1311"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1998",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5a9fa39b0d083b0ff5fe92efb8641cded77ba57a",
+      "date": "2026-09-24",
+      "subject": "Merge pull request #1958 from aspen-ai-org/abhinav/eng-1272-t2-outbound-agent-table-subclass-accessor",
+      "pr": 1958,
+      "issues": [
+        "ENG-1272"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1958",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "44cb327beaa6b20d9346952b02fa0a0961cf35fd",
+      "date": "2026-09-24",
+      "subject": "Merge pull request #1975 from aspen-ai-org/abhinav/eng-1258-t1-add-isoutbound-to-aiagentgriddto-and-grid-projection",
+      "pr": 1975,
+      "issues": [
+        "ENG-1258"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1975",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8adbd4c6539dd22d5b3a8a4c49cb2262c0e85318",
+      "date": "2026-09-24",
+      "subject": "Merge pull request #1987 from aspen-ai-org/abhinav/eng-1259-t2-filter-dial-pad-to-outbound-agents-and-label-the-phone",
+      "pr": 1987,
+      "issues": [
+        "ENG-1259"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1987",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5ace0d229206580803a2bb9889f6a09e0b971fbd",
+      "date": "2026-09-25",
+      "subject": "Merge pull request #1990 from aspen-ai-org/abhinav/eng-1260-t3-create-and-duplicate-agents-as-inbound-or-outbound",
+      "pr": 1990,
+      "issues": [
+        "ENG-1260"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1990",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "186aff2d3a1789f42816b794ce707543a022ba3f",
+      "date": "2026-09-28",
+      "subject": "Merge pull request #2000 from aspen-ai-org/abhinav/eng-1261-t4-reject-phone-number-assignment-to-outbound-agents-feature",
+      "pr": 2000,
+      "issues": [
+        "ENG-1261"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2000",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8864686a448f9e92edee5ed1a9b1f5c269c69bb5",
+      "date": "2026-09-28",
+      "subject": "Merge pull request #2002 from aspen-ai-org/abhinav/eng-1316-t5-let-outbound-agents-publish-without-a-phone-number",
+      "pr": 2002,
+      "issues": [
+        "ENG-1316"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2002",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7847b9533221f04527321ed32cfa1fb361aadce8",
+      "date": "2026-09-30",
+      "subject": "Merge pull request #2007 from aspen-ai-org/abhinav/eng-1317-t61-publishing-writes-an-agentid-keyed-row-and-the-retriever",
+      "pr": 2007,
+      "issues": [
+        "ENG-1317"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2007",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "6a33fa7d42fce6324146571b797db62a87f620f6",
+      "date": "2026-09-30",
+      "subject": "Merge pull request #2011 from aspen-ai-org/abhinav/eng-1319-t62-outbound-agents-unpublish-and-archive-by-agentid",
+      "pr": 2011,
+      "issues": [
+        "ENG-1319"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2011",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3c2e50f3695ab52e395865d1ead59a60455f15e6",
+      "date": "2026-10-01",
+      "subject": "Merge pull request #2013 from aspen-ai-org/abhinav/eng-1318-t7-outbound-calls-find-their-agent-by-agentid-and-reject",
+      "pr": 2013,
+      "issues": [
+        "ENG-1318"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2013",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "802265b98306a67827b5683b6d75ee05bdf124c6",
+      "date": "2026-10-01",
+      "subject": "Merge pull request #2015 from aspen-ai-org/simar/eng-1326-t8-load-an-outbound-agents-draft-by-agentid",
+      "pr": 2015,
+      "issues": [
+        "ENG-1326"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2015",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d65d97f6d20881e712dcdf82b1ebc160a1042443",
+      "date": "2026-10-02",
+      "subject": "Merge pull request #2016 from aspen-ai-org/simar/eng-1327-t9-test-call-endpoint-and-draft-routing-in-makeoutboundcall",
+      "pr": 2016,
+      "issues": [
+        "ENG-1327"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2016",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "46e5550d42c547aae5a30e2381c0cd7b94178835",
+      "date": "2026-10-02",
+      "subject": "Merge pull request #2056 from aspen-ai-org/abhinav/eng-1328-t10-make-test-call-tab-in-script-builder",
+      "pr": 2056,
+      "issues": [
+        "ENG-1328"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2056",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8f45b526fcf05b8179e8bddf05235ccd00b36f6d",
+      "date": "2026-10-02",
+      "subject": "Merge pull request #2061 from aspen-ai-org/abhinav/eng-1363-various-ui-cleanup-fast-follows",
+      "pr": 2061,
+      "issues": [
+        "ENG-1363"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2061",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3529200766acbca0fd3603183da6ed4b0034bc49",
+      "date": "2026-10-09",
+      "subject": "Merge pull request #2095 from aspen-ai-org/abhinav/eng-1384-save-leads-for-outbound-calls",
+      "pr": 2095,
+      "issues": [
+        "ENG-1384"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2095",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "b168b8c6a74b243c77f836e58f386a12a885cb53",
+      "date": "2026-10-09",
+      "subject": "Merge pull request #2135 from aspen-ai-org/abhinav/duplicate-eng-1342-inbound-db-fallback-can-load-an-older-production-script",
+      "pr": 2135,
+      "issues": [
+        "ENG-1342"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2135",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "18d92c4052ba4e6587f6c1e74f156071c2614248",
+      "date": "2026-10-12",
+      "subject": "Merge pull request #2154 from aspen-ai-org/abhinav/eng-1476-test-call-feature-fast-follows",
+      "pr": 2154,
+      "issues": [
+        "ENG-1476"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2154",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7cac827d0acb687b2b9e74be01be3ba522d70f59",
+      "date": "2026-10-14",
+      "subject": "Merge pull request #2160 from aspen-ai-org/abhinav/eng-1474-fixing-inbound-and-outbound-unpublish-logic-to-avoid-race",
+      "pr": 2160,
+      "issues": [
+        "ENG-1474"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2160",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bc1829bd7f4aa4e1a746cd8b7f5d124a15f37664",
+      "date": "2026-10-15",
+      "subject": "Merge pull request #2180 from aspen-ai-org/abhinav/eng-1515-rename-unpublishagentandremovefromcacheandtablestorage-to",
+      "pr": 2180,
+      "issues": [
+        "ENG-1515"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2180",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "44bd24123c48ee94f8ebaed85691d88ab35daf30",
+      "date": "2026-10-20",
+      "subject": "Merge pull request #2216 from aspen-ai-org/abhinav/eng-1528-remove-the-old-inbound-unpublish-route-alias",
+      "pr": 2216,
+      "issues": [
+        "ENG-1528"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2216",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8f961d48c93fbc87197df729464c701e737df931",
+      "date": "2026-09-22",
+      "subject": "Merge pull request #1965 from aspen-ai-org/david/eng-1246-create-useansweringmachinedetection-feature-flag",
+      "pr": 1965,
+      "issues": [
+        "ENG-1246"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1965",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bc25db267e7ed202e7439a71a1b9deb06daa75ce",
+      "date": "2026-09-24",
+      "subject": "Merge pull request #1978 from aspen-ai-org/tao/eng-1235-define-amd-verdict-and-dto-contracts",
+      "pr": 1978,
+      "issues": [
+        "ENG-1235"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1978",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "2513db24d872fa405f7e3926f8d914121b095a34",
+      "date": "2026-09-25",
+      "subject": "Merge pull request #1984 from aspen-ai-org/david/eng-1237-create-the-scoped-amd-service-interface",
+      "pr": 1984,
+      "issues": [
+        "ENG-1237"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1984",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "347e510c340888a1364b264a977159bd27fb3a80",
+      "date": "2026-09-29",
+      "subject": "Merge pull request #1981 from aspen-ai-org/tao/eng-1236-create-and-evaluate-the-amd-transcript-classifier-prompt",
+      "pr": 1981,
+      "issues": [
+        "ENG-1236"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1981",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "fc2a09686ac379bc29d99239d254ccc5fb2d1e8f",
+      "date": "2026-09-29",
+      "subject": "Merge pull request #1994 from aspen-ai-org/tao/eng-1307-make-bot-wait-for-callee-to-speak-first-in-outbound-calls",
+      "pr": 1994,
+      "issues": [
+        "ENG-1307"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1994",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d36ee0c8520d4b7a2c121a632f066e45d6c163ae",
+      "date": "2026-10-08",
+      "subject": "Merge pull request #1995 from aspen-ai-org/tao/eng-1239-implement-answering-machine-detection-method",
+      "pr": 1995,
+      "issues": [
+        "ENG-1239"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1995",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "c3e72ef294d3845dc56b2cb1b94c65fc4f88ef69",
+      "date": "2026-10-09",
+      "subject": "Merge pull request #2058 from aspen-ai-org/tao/eng-1243-add-end-to-end-amd-coverage",
+      "pr": 2058,
+      "issues": [
+        "ENG-1243"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2058",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1822095da3200fd1ada97d7deeb40ca8bf28cd3e",
+      "date": "2026-10-12",
+      "subject": "Merge pull request #2094 from aspen-ai-org/tao/eng-1391-require-multi-turn-conversation-for-human-verdict",
+      "pr": 2094,
+      "issues": [
+        "ENG-1391"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2094",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "6360d44748c1a0ee0f88538f65855eb1ca40b654",
+      "date": "2026-10-13",
+      "subject": "Merge pull request #2106 from aspen-ai-org/tao/eng-1392-store-outbound-voicemail-greeting-hashes-in-table-storage",
+      "pr": 2106,
+      "issues": [
+        "ENG-1392"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2106",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "a4d2c21a7c6b3a7602b079171450d8fedfe78f2e",
+      "date": "2026-10-14",
+      "subject": "Merge pull request #2122 from aspen-ai-org/david/eng-1323-update-caller-silence-thresholds-while-amd-is-running",
+      "pr": 2122,
+      "issues": [
+        "ENG-1323"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2122",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "be046f0f990cfa23611a21787d62f2d2eda241cf",
+      "date": "2026-10-14",
+      "subject": "Merge pull request #2105 from aspen-ai-org/tao/eng-1393-reduce-amd-time-limit-to-one-second-and-gate-speech-behind",
+      "pr": 2105,
+      "issues": [
+        "ENG-1393"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2105",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8230920a0cde686e922b2ad1747d752b78bfcf21",
+      "date": "2026-10-15",
+      "subject": "Merge pull request #2164 from aspen-ai-org/tao/eng-1485-remove-30s-deadline-from-amd",
+      "pr": 2164,
+      "issues": [
+        "ENG-1485"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2164",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "b3a1f2e4f01243b764ed7e69bcfb28d30efc0bca",
+      "date": "2026-09-02",
+      "subject": "Merge pull request #1840 from aspen-ai-org/simar/eng-1116-create-the-barebone-portal-api-controller-for-outbound",
+      "pr": 1840,
+      "issues": [
+        "ENG-1116"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1840",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e2c8e79cd4065754e71bf69d67b04d6e220efdb4",
+      "date": "2026-09-02",
+      "subject": "Merge pull request #1839 from aspen-ai-org/simar/eng-1115-add-new-isoutboundcall-and-outboundcalltriggeredby-columns",
+      "pr": 1839,
+      "issues": [
+        "ENG-1115"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1839",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "b0ae3c2c4488600a09f8678149e0bfca56925cf5",
+      "date": "2026-09-03",
+      "subject": "Merge pull request #1843 from aspen-ai-org/simar/eng-1119-add-new-portal-controller-method-for-outbound-calling",
+      "pr": 1843,
+      "issues": [
+        "ENG-1119"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1843",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "defb6c469662e3cf6e5a87ed8e22d346377d7eb3",
+      "date": "2026-09-04",
+      "subject": "Merge pull request #1854 from aspen-ai-org/nico/eng-1139-show-isoutboundcall-on-leads-page",
+      "pr": 1854,
+      "issues": [
+        "ENG-1139"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1854",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4fb9289b25cd264400018a31945d108de9084fe7",
+      "date": "2026-09-08",
+      "subject": "Merge pull request #1856 from aspen-ai-org/nico/eng-1120-add-new-controller-methods-for-the-management-page",
+      "pr": 1856,
+      "issues": [
+        "ENG-1120"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1856",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d1cb639ceb219e338bf1fd62418c9405249e4132",
+      "date": "2026-09-09",
+      "subject": "Merge pull request #1846 from aspen-ai-org/simar/eng-1123-create-the-outbound-calling-dial-pop-up-modal",
+      "pr": 1846,
+      "issues": [
+        "ENG-1123"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1846",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5e1d5e6dd36ee6595009a2727c9659e549d656f4",
+      "date": "2026-09-09",
+      "subject": "Merge pull request #1863 from aspen-ai-org/simar/eng-1149-create-the-new-outboundcall-endpoint-for-the-portal-api",
+      "pr": 1863,
+      "issues": [
+        "ENG-1149"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1863",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "df636a93b0214c92ff6f0b2f1b1d804a15c36ee9",
+      "date": "2026-09-14",
+      "subject": "Merge pull request #1880 from aspen-ai-org/nico/eng-1121-create-the-new-get-endpoint-for-the-above-controllerfrontend",
+      "pr": 1880,
+      "issues": [
+        "ENG-1121"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1880",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "63c308b268f9508eba971bf5d558cde1d5c906f6",
+      "date": "2026-09-14",
+      "subject": "Merge pull request #1872 from aspen-ai-org/nico/eng-1122-create-the-outbound-calling-management-page-frontend",
+      "pr": 1872,
+      "issues": [
+        "ENG-1122"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1872",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "fa843603b415277e15f1bcc18ba0644682a18d1c",
+      "date": "2026-09-14",
+      "subject": "Merge pull request #1891 from aspen-ai-org/nico/eng-1163-create-separate-action-method-for-fetching-only-agent-id-and",
+      "pr": 1891,
+      "issues": [
+        "ENG-1163"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1891",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "30b5bb38e754e1f9632ed1ec7827e33cf679d6ab",
+      "date": "2026-09-15",
+      "subject": "Merge pull request #1896 from aspen-ai-org/nico/eng-1180-make-outbound-call-management-page-use-leadrepo",
+      "pr": 1896,
+      "issues": [
+        "ENG-1180"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1896",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "439c9ca5a6abd8f211453cc8a40305919e8fad22",
+      "date": "2026-09-21",
+      "subject": "Merge pull request #1902 from aspen-ai-org/nico/eng-1165-blocked-by-eng-1160-add-frontend-playwright-tests",
+      "pr": 1902,
+      "issues": [
+        "ENG-1165"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1902",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "12ea93ff76156968d824ffdbe5cc4ee78265566f",
+      "date": "2026-10-08",
+      "subject": "Merge pull request #2120 from aspen-ai-org/abhinav/eng-1431-t1-add-outboundphonenumber-to-the-organization",
+      "pr": 2120,
+      "issues": [
+        "ENG-1431"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2120",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4d4b92445dc066e6b2df7125f2100cc16a654a0b",
+      "date": "2026-10-09",
+      "subject": "Merge pull request #2121 from aspen-ai-org/abhinav/eng-1432-t2-dial-outbound-calls-from-the-orgs-outbound-number",
+      "pr": 2121,
+      "issues": [
+        "ENG-1432"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2121",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8c3f6e016e2665f31f521c3f093fe04d61e2eaf7",
+      "date": "2026-10-09",
+      "subject": "Merge pull request #2123 from aspen-ai-org/abhinav/eng-1433-t3-seed-outbound-numbers-for-local-and-qa",
+      "pr": 2123,
+      "issues": [
+        "ENG-1433"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2123",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3e087bb78d5542042ec4a7491c9c17d0abac0940",
+      "date": "2026-10-09",
+      "subject": "Merge pull request #2125 from aspen-ai-org/abhinav/eng-1434-t4-show-the-outbound-number-in-the-outbound-calls-table",
+      "pr": 2125,
+      "issues": [
+        "ENG-1434"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/2125",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7cd93d0dc7ea5a369c527eb6511daf31629a9746",
+      "date": "2026-09-25",
+      "subject": "Merge pull request #1922 from aspen-ai-org/simar/eng-1229-create-the-callercontextdto-and-thread-it-through-the",
+      "pr": 1922,
+      "issues": [
+        "eng-1229"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1922",
+      "scoring_scope": "Supporting implementation dependency for behavior explicitly requested in the task; linked issue is outside the source project lists."
+    },
+    {
+      "commit": "07cdbda49324c31e488e82761306e88f0215a049",
+      "date": "2026-09-26",
+      "subject": "Merge pull request #1957 from aspen-ai-org/simar/eng-1231-create-new-portal-screen-for-to-allow-user-to-enter-caller",
+      "pr": 1957,
+      "issues": [
+        "eng-1231"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1957",
+      "scoring_scope": "Supporting implementation dependency for behavior explicitly requested in the task; linked issue is outside the source project lists."
+    },
+    {
+      "commit": "89f18c97f5cbdaba8b3b68e45d18f6475ddb6335",
+      "date": "2026-09-24",
+      "subject": "Merge pull request #1974 from aspen-ai-org/simar/eng-1283-register-outboundstart-node-type-and-add-validation-and",
+      "pr": 1974,
+      "issues": [
+        "eng-1283"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1974",
+      "scoring_scope": "Supporting implementation dependency for behavior explicitly requested in the task; linked issue is outside the source project lists."
+    },
+    {
+      "commit": "cb818192f4b86b8aaab07c1241a5907415274bb0",
+      "date": "2026-09-26",
+      "subject": "Merge pull request #1983 from aspen-ai-org/simar/eng-1289-implement-logic-to-update-the-start-node-on-agent-conversion",
+      "pr": 1983,
+      "issues": [
+        "eng-1289"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1983",
+      "scoring_scope": "Supporting implementation dependency for behavior explicitly requested in the task; linked issue is outside the source project lists."
+    },
+    {
+      "commit": "84357c9bcc0497da454e696d197907adf934d5c5",
+      "date": "2026-09-28",
+      "subject": "Merge pull request #1997 from aspen-ai-org/simar/eng-1284-create-new-start-node-for-the-script-builder-frontend",
+      "pr": 1997,
+      "issues": [
+        "eng-1284"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1997",
+      "scoring_scope": "Supporting implementation dependency for behavior explicitly requested in the task; linked issue is outside the source project lists."
+    }
+  ]
+}

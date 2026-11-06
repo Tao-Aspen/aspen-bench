@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "instructions": {
+    ".claude/CLAUDE.md": {
+      "sha256": "a0c5ab78baf6b70c6bb0a02b33b01df97795d3c4bb91ddcdc587252099ab8cc9"
+    },
+    "AGENTS.md": {
+      "sha256": "16dac298da9fc87e7b2cf06e8f5e9f4c4e21c15a3906d968a9a1b56e591efef1"
+    },
+    "AspenAI.Functions/AGENTS.md": {
+      "sha256": "8926f477e8086276c40abf2d549f1f2cd50554ede46e56740ebc5b4c2d9bf711"
+    },
+    "AspenAI.Models/AGENTS.md": {
+      "sha256": "025bc07941bbc9915055fdb0c381d21879c5b7bb0d1ff02f7839d2b83cb69ee1"
+    },
+    "AspenAI.Portal.Frontend/AGENTS.md": {
+      "sha256": "89fd51c6868ee9dd41bb923f511c2ed21e49dd6729658ab689cd3a3cecf2b473"
+    }
+  },
+  "tasks": {
+    "01-prompt-management": {
+      "baseline_tree": "c223045e482a49617edc78407ff23e96801907e6",
+      "reference_commit": "7bbbd53f3aae622a03c39537c4193873303e754d",
+      "reference_tree": "76faa7e2edda368efea5b9b8827aa45bdf380a14",
+      "instruction_sha256": {
+        "AGENTS.md": "16dac298da9fc87e7b2cf06e8f5e9f4c4e21c15a3906d968a9a1b56e591efef1",
+        "AspenAI.Models/AGENTS.md": "025bc07941bbc9915055fdb0c381d21879c5b7bb0d1ff02f7839d2b83cb69ee1",
+        "AspenAI.Functions/AGENTS.md": "8926f477e8086276c40abf2d549f1f2cd50554ede46e56740ebc5b4c2d9bf711",
+        ".claude/CLAUDE.md": "a0c5ab78baf6b70c6bb0a02b33b01df97795d3c4bb91ddcdc587252099ab8cc9",
+        "AspenAI.Portal.Frontend/AGENTS.md": "89fd51c6868ee9dd41bb923f511c2ed21e49dd6729658ab689cd3a3cecf2b473"
+      }
+    },
+    "02-blind-transfer": {
+      "baseline_tree": "1e5cebd30d725e57f3bc8d56f356684c67f4e87d",
+      "reference_commit": "2ee1e253e700cab276787ea1ce6dadaf4142378b",
+      "reference_tree": "00813828cd28c6ce531e67e866bf9652657765d3",
+      "instruction_sha256": {
+        "AGENTS.md": "16dac298da9fc87e7b2cf06e8f5e9f4c4e21c15a3906d968a9a1b56e591efef1",
+        "AspenAI.Models/AGENTS.md": "025bc07941bbc9915055fdb0c381d21879c5b7bb0d1ff02f7839d2b83cb69ee1",
+        "AspenAI.Functions/AGENTS.md": "8926f477e8086276c40abf2d549f1f2cd50554ede46e56740ebc5b4c2d9bf711",
+        ".claude/CLAUDE.md": "a0c5ab78baf6b70c6bb0a02b33b01df97795d3c4bb91ddcdc587252099ab8cc9",
+        "AspenAI.Portal.Frontend/AGENTS.md": "89fd51c6868ee9dd41bb923f511c2ed21e49dd6729658ab689cd3a3cecf2b473"
+      }
+    },
+    "03-outbound-calling": {
+      "baseline_tree": "e634af39b74920e2cf8c214afa9f3946ddf08b66",
+      "reference_commit": "44bd24123c48ee94f8ebaed85691d88ab35daf30",
+      "reference_tree": "4713dcd590f70c29183885b3099345696a2404da",
+      "instruction_sha256": {
+        "AGENTS.md": "16dac298da9fc87e7b2cf06e8f5e9f4c4e21c15a3906d968a9a1b56e591efef1",
+        "AspenAI.Models/AGENTS.md": "025bc07941bbc9915055fdb0c381d21879c5b7bb0d1ff02f7839d2b83cb69ee1",
+        "AspenAI.Functions/AGENTS.md": "8926f477e8086276c40abf2d549f1f2cd50554ede46e56740ebc5b4c2d9bf711",
+        ".claude/CLAUDE.md": "a0c5ab78baf6b70c6bb0a02b33b01df97795d3c4bb91ddcdc587252099ab8cc9",
+        "AspenAI.Portal.Frontend/AGENTS.md": "89fd51c6868ee9dd41bb923f511c2ed21e49dd6729658ab689cd3a3cecf2b473"
+      }
+    }
+  }
+}

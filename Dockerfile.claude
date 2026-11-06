@@ -1,0 +1,19 @@
+FROM node:22.22.3-slim@sha256:7af03b14a13c8cdd38e45058fd957bf00a72bbe17feac43b1c15a689c029c732 AS node
+FROM mcr.microsoft.com/dotnet/sdk:8.0@sha256:a9330090b730c2abde8f3f43b3d1e24e4b8cba028de7bab1a7fdcd50cb7a3b7e AS dotnet8
+FROM mcr.microsoft.com/dotnet/sdk:10.0@sha256:8a90a473da5205a16979de99d2fc20975e922c68304f5c79d564e666dc3982fc
+COPY --from=node /usr/local/bin/node /usr/local/bin/node
+COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+COPY --from=dotnet8 /usr/share/dotnet/sdk /usr/share/dotnet/sdk
+COPY --from=dotnet8 /usr/share/dotnet/shared /usr/share/dotnet/shared
+COPY --from=dotnet8 /usr/share/dotnet/packs /usr/share/dotnet/packs
+RUN ln -s ../lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm && ln -s ../lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
+RUN apt-get update && apt-get install -y --no-install-recommends git ripgrep python3 ca-certificates curl && rm -rf /var/lib/apt/lists/*
+RUN useradd --uid 501 --create-home aspen && mkdir -p /opt/aspen-bench /opt/nuget /workspace/AspenAI.Portal.Frontend/node_modules && chown -R aspen /opt/aspen-bench /opt/nuget /workspace
+WORKDIR /opt/aspen-bench
+COPY package.json package-lock.json ./
+RUN npm ci --ignore-scripts --no-audit --no-fund
+COPY adapters/claude.mjs adapters/claude.mjs
+ENV NUGET_PACKAGES=/opt/nuget
+VOLUME ["/workspace/AspenAI.Portal.Frontend/node_modules"]
+USER aspen
+WORKDIR /workspace

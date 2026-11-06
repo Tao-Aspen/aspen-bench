@@ -1,0 +1,21 @@
+{
+  "task": "01-prompt-management",
+  "repository": "https://github.com/aspen-ai-org/AspenAI",
+  "base_commit": "b0b2ad333a1a5422377a534afe7055bf278e0a50",
+  "base_date": "2026-05-07T18:06:52Z",
+  "first_project_merge": "9744aa18c819bcd524d4974bb262ddf1de84ac31",
+  "reference_commit": "7bbbd53f3aae622a03c39537c4193873303e754d",
+  "reference_date": "2026-09-04T13:02:30Z",
+  "baseline_policy": "Exact full main-branch tree immediately before the first linked project implementation merge, with all ancestor history. Only the current AGENTS.md and CLAUDE.md instruction files are overlaid in a separate commit. Existing prototypes and prerequisites are intentionally retained.",
+  "reference_policy": "Actual full merged main-branch tree frozen at project completion (tasks 1 and 2), or last included completed-issue merge (task 3). The interval includes unrelated work; never grade the whole-tree difference. Use the scoped rubric, linked PR ledger, final behavior, and tests. References may rely on unrelated refactors absent from the starting tree; accept solutions adapted to baseline architecture.",
+  "scope_note": "Earlier prototypes and foundational LiveKit/prompt code are part of the starting application; the requested project must be completed on top of them.",
+  "projects": [
+    {
+      "id": "P-PLA-297",
+      "name": "Prompt Management and Publishing In Portal",
+      "url": "https://linear.app/aspen-ai/project/prompt-management-and-publishing-in-portal-644e0625d82d",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 162
+    }
+  ]
+}

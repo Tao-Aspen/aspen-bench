@@ -1,0 +1,1113 @@
+{
+  "task": "01-prompt-management",
+  "note": "Linked PRs verified reachable from the frozen main branch. These are provenance anchors, not a patch to apply wholesale. Unrelated changes and earlier superseded approaches do not define requirements. Read final reference code for current behavior. Some historical issues were moved between teams and their IDs differ from branch names.",
+  "projects": [
+    {
+      "id": "P-PLA-297",
+      "name": "Prompt Management and Publishing In Portal",
+      "url": "https://linear.app/aspen-ai/project/prompt-management-and-publishing-in-portal-644e0625d82d",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 162
+    }
+  ],
+  "commits": [
+    {
+      "commit": "9744aa18c819bcd524d4974bb262ddf1de84ac31",
+      "date": "2026-05-07",
+      "subject": "Merge pull request #889 from aspen-ai-org/simar/eng-231-update-types-and-mockapi-to-mock-the-updated-data-scheme",
+      "pr": 889,
+      "issues": [
+        "PLA-6152"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/889",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e47fa2fb7587ae3781cd11399604eaf01c0be999",
+      "date": "2026-05-07",
+      "subject": "Merge pull request #892 from aspen-ai-org/simar/eng-232-create-the-new-listgrid-view-frontend-page-and-test-with",
+      "pr": 892,
+      "issues": [
+        "PLA-6149"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/892",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "225e956045623badf540651b332b5aec5f420be0",
+      "date": "2026-05-10",
+      "subject": "Merge pull request #896 from aspen-ai-org/simar/eng-233-update-current-entry-point-to-route-to-the-grid-view-page",
+      "pr": 896,
+      "issues": [
+        "PLA-6147"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/896",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "80318990b6083baf48ee21b9ddc3506379b18944",
+      "date": "2026-05-10",
+      "subject": "Merge pull request #905 from aspen-ai-org/simar/eng-240-fix-tablecontext-file-for-admin-portal",
+      "pr": 905,
+      "issues": [
+        "PLA-6146"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/905",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "48c2ce29865b76bd35140250bb198f58f7d55e3c",
+      "date": "2026-05-13",
+      "subject": "Merge pull request #902 from aspen-ai-org/yash/eng-234-update-the-existing-code-for-the-prompt-editor-page-and-test",
+      "pr": 902,
+      "issues": [
+        "PLA-6139"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/902",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "61765d07ba28d939970792080f8785246f816f9b",
+      "date": "2026-05-13",
+      "subject": "Merge pull request #910 from aspen-ai-org/simar/eng-235-update-currently-existing-functionsapis-in-backend-and-the",
+      "pr": 910,
+      "issues": [
+        "PLA-6138"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/910",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "453db3a1fe3d0fc86c648dc85e807a136abe0bce",
+      "date": "2026-05-15",
+      "subject": "Merge pull request #954 from aspen-ai-org/simar/eng-250-install-the-diff-package-and-create-the-diff-component-along",
+      "pr": 954,
+      "issues": [
+        "PLA-6137"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/954",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "664a38c373d6b0fc322e33304dab45432e06644b",
+      "date": "2026-05-18",
+      "subject": "Merge pull request #974 from aspen-ai-org/simar/eng-258-create-and-wire-up-the-reviewanddeployprompt-page-with-the",
+      "pr": 974,
+      "issues": [
+        "PLA-6136"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/974",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "29f48961b2095c61c1566cf4483ae143cbf86fdc",
+      "date": "2026-05-18",
+      "subject": "Merge pull request #953 from aspen-ai-org/yash/eng-247-creating-a-new-endpoint-to-fetch-just-the-prompt-types",
+      "pr": 953,
+      "issues": [
+        "PLA-6135"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/953",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "cf254403e878c92c94e05d417ce92ef9304bb801",
+      "date": "2026-05-21",
+      "subject": "Merge pull request #1006 from aspen-ai-org/simar/eng-279-fix-diff-view-alignment-for-the-reviewandpublishpromptpage",
+      "pr": 1006,
+      "issues": [
+        "PLA-6133"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1006",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4dd6892f06bef747e9785c2e2cbd6852b06347c4",
+      "date": "2026-05-21",
+      "subject": "Merge pull request #1005 from aspen-ai-org/yash/eng-281-add-a-new-playwright-fixture-for-frontend-e2e-tests",
+      "pr": 1005,
+      "issues": [
+        "PLA-6132"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1005",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "76946977c967fed433c4937c832e0f5d070cabfb",
+      "date": "2026-05-25",
+      "subject": "Merge pull request #1036 from aspen-ai-org/yash/eng-331-creating-replacement-token-defaults",
+      "pr": 1036,
+      "issues": [
+        "PLA-6131"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1036",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3e882c75106cc2623a5a98567674ff67c5006f40",
+      "date": "2026-05-25",
+      "subject": "Merge pull request #1022 from aspen-ai-org/simar/eng-291-update-the-prompt-management-system-db-1",
+      "pr": 1022,
+      "issues": [
+        "PLA-6129"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1022",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "50e948d75a33e1e887a9b09aa2746ae8424e6c14",
+      "date": "2026-05-26",
+      "subject": "Merge pull request #992 from aspen-ai-org/simar/eng-259-rename-deploy-button-on-editorpage-to-review-and-publish-and",
+      "pr": 992,
+      "issues": [
+        "PLA-6130"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/992",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "12dcb0e656306855e5edb38dac24d4c5ab600e9c",
+      "date": "2026-05-27",
+      "subject": "Merge pull request #1026 from aspen-ai-org/simar/eng-291-update-the-prompt-management-system-db-2",
+      "pr": 1026,
+      "issues": [
+        "PLA-6129"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1026",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "2ec2fb1748a2777baf9f210ced169b9db43dd3b8",
+      "date": "2026-05-31",
+      "subject": "Merge pull request #1064 from aspen-ai-org/simar/eng-300-create-new-db-table-for-conditional-tokens",
+      "pr": 1064,
+      "issues": [
+        "PLA-6128"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1064",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e552d15df71a24790fe12da39e4c963a14fa02a7",
+      "date": "2026-05-31",
+      "subject": "Merge pull request #1062 from aspen-ai-org/yash/eng-293-seed-all-the-replacement-tokens-for-the-prompt-management",
+      "pr": 1062,
+      "issues": [
+        "PLA-6127"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1062",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4c64275c1983aef7c1c2cf8824ef2cb06a6cdc12",
+      "date": "2026-05-31",
+      "subject": "Merge pull request #1082 from aspen-ai-org/yash/eng-295-add-functionality-to-save-another-version-from-a-non-1",
+      "pr": 1082,
+      "issues": [
+        "PLA-6126"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1082",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bfcee3d830ec0bf39e03ae4d3fab45e9ce7efffd",
+      "date": "2026-05-31",
+      "subject": "Merge pull request #1091 from aspen-ai-org/yash/eng-295-add-functionality-to-save-another-version-from-a-non-2",
+      "pr": 1091,
+      "issues": [
+        "PLA-6126"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1091",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7bf1d9c14f680d8d945c243e838fe7617dc313ec",
+      "date": "2026-06-01",
+      "subject": "Merge pull request #1028 from aspen-ai-org/yash/eng-252-add-frontend-tests-for-prompt-management",
+      "pr": 1028,
+      "issues": [
+        "PLA-6122"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1028",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "0d7681080a2b94e4b245cdc2a1a43b11aa6c1bea",
+      "date": "2026-06-01",
+      "subject": "Merge pull request #1073 from aspen-ai-org/simar/eng-301-update-the-prompt-management-codebackend-to-include-logic",
+      "pr": 1073,
+      "issues": [
+        "PLA-6121",
+        "PLA-6120"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1073",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "af2a245dd7ea46fbdcbceac8773bea0113995f58",
+      "date": "2026-06-02",
+      "subject": "Merge pull request #1079 from aspen-ai-org/simar/eng-302-integrate-the-new-conditional-tokens-with-the-backend-prompt",
+      "pr": 1079,
+      "issues": [
+        "PLA-6119"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1079",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "90851274262c72cc13fe1431a38a9300c7842d4e",
+      "date": "2026-06-02",
+      "subject": "Merge pull request #1072 from aspen-ai-org/simar/eng-260-implement-playwright-tests-for-the-new",
+      "pr": 1072,
+      "issues": [
+        "PLA-6118"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1072",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8d564a051388e05b10b8948c9e283452f06604fd",
+      "date": "2026-06-02",
+      "subject": "Merge pull request #1085 from aspen-ai-org/simar/eng-303-update-prompt-seed-with-the-conditional-tokens",
+      "pr": 1085,
+      "issues": [
+        "PLA-6116"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1085",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1a3623655cbcb41a77d7752469df3ec400a0f878",
+      "date": "2026-06-03",
+      "subject": "Merge pull request #1120 from aspen-ai-org/simar/eng-403-mark-jonkey-and-nav-property-as-not-obsolete",
+      "pr": 1120,
+      "issues": [
+        "PLA-6115"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1120",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "0efb56d3a8705afe2b75cfc66a355a7d9e0a8be2",
+      "date": "2026-06-03",
+      "subject": "Merge pull request #1107 from aspen-ai-org/yash/eng-371-creating-a-frontend-test-endpoint-that-creates-new-versions",
+      "pr": 1107,
+      "issues": [
+        "PLA-6108"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1107",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "a626318a06394deb754302f82e2f2f610a84f046",
+      "date": "2026-06-03",
+      "subject": "Merge pull request #1104 from aspen-ai-org/simar/eng-341-remove-manage-prompt-button-from-the-prompt-management-table",
+      "pr": 1104,
+      "issues": [
+        "PLA-6114"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1104",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "681154993a5be5899abea47c74a6cfdcd066894d",
+      "date": "2026-06-03",
+      "subject": "Merge pull request #1116 from aspen-ai-org/yash/eng-367-write-frontend-playwright-tests-for-new-save-functionality",
+      "pr": 1116,
+      "issues": [
+        "PLA-6112"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1116",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "8106763e1a35d2ab1f5cba319be7949562e20391",
+      "date": "2026-06-04",
+      "subject": "Merge pull request #1121 from aspen-ai-org/yash/eng-443-add-back-in-missing-promptreplacementtokentypeenum-and",
+      "pr": 1121,
+      "issues": [
+        "PLA-6111"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1121",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "828acb23a0acfd610b6ea5b4ed9af06594afdd0b",
+      "date": "2026-06-04",
+      "subject": "Merge pull request #1109 from aspen-ai-org/simar/eng-372-update-table-name-of-all-token-names-to-be-consistent-for",
+      "pr": 1109,
+      "issues": [
+        "PLA-6110"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1109",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5afe4c4c257e0d05c477c274a96b9d3aaf01ca29",
+      "date": "2026-06-04",
+      "subject": "Merge pull request #1125 from aspen-ai-org/simar/eng-404-update-all-callers-and-repo-methods-and-seeds-to-reference",
+      "pr": 1125,
+      "issues": [
+        "PLA-6109"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1125",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "df2b2f3a775a5dfc43642f8717bc963d310143c8",
+      "date": "2026-06-04",
+      "subject": "Merge pull request #1133 from aspen-ai-org/simar/eng-453-skip-openai-api-call-integration-test",
+      "pr": 1133,
+      "issues": [
+        "PLA-6106"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1133",
+      "scoring_scope": "excluded",
+      "exclusion_reason": "Paid AI integration test toggling is not a required implementation outcome."
+    },
+    {
+      "commit": "2c94535dbf58b100ceba14381e42be739002d79a",
+      "date": "2026-06-05",
+      "subject": "Merge pull request #1156 from aspen-ai-org/simar/eng-464-add-failing-edge-case-test-for-summary-auditor-prompt",
+      "pr": 1156,
+      "issues": [
+        "PLA-6102"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1156",
+      "scoring_scope": "excluded",
+      "exclusion_reason": "Summary auditor prompt quality work is outside the prompt management acceptance scope."
+    },
+    {
+      "commit": "c6f28dd73d2cd4a0a4b3fd77a0e5a4aa72611118",
+      "date": "2026-06-07",
+      "subject": "Merge pull request #1130 from aspen-ai-org/simar/eng-405-create-backend-setup-for-the-constants-tablerepo-callers-and",
+      "pr": 1130,
+      "issues": [
+        "PLA-6101"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1130",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "43fa206dc30a70072d1040df6647745f6c821b10",
+      "date": "2026-06-07",
+      "subject": "Merge pull request #1139 from aspen-ai-org/simar/eng-454-update-the-seeds-and-the-prompts-for-new-constants-paradigm",
+      "pr": 1139,
+      "issues": [
+        "PLA-6100"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1139",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "79aaebf581a2c723c422f5ed323d1265b1535066",
+      "date": "2026-06-07",
+      "subject": "Merge pull request #1101 from aspen-ai-org/yash/eng-244-integrate-lexical-to-sync-line-number-with-soft-wrapping",
+      "pr": 1101,
+      "issues": [
+        "PLA-6099"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1101",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "45a028784432e4f533119858af275ad22c4d22d1",
+      "date": "2026-06-07",
+      "subject": "Merge pull request #1136 from aspen-ai-org/yash/eng-452-safeguarding-direct-api-calls-to-save-in-place-from-a",
+      "pr": 1136,
+      "issues": [
+        "PLA-6098"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1136",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1e478a7e999c55366416a088682bc235ec9041db",
+      "date": "2026-06-07",
+      "subject": "Merge pull request #1149 from aspen-ai-org/yash/eng-400-updating-local-seeds-and-moving-them-to-prod-db",
+      "pr": 1149,
+      "issues": [
+        "PLA-6097"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1149",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "a835a20400beb29123b696586ba3ab5a58b02a30",
+      "date": "2026-06-09",
+      "subject": "Merge pull request #1160 from aspen-ai-org/simar/eng-401-create-new-endpoint-to-fetch-prompts-from-prod-db-for-non",
+      "pr": 1160,
+      "issues": [
+        "PLA-6094"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1160",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "b1e842dcc283359b6819b24129d49c61b1470df0",
+      "date": "2026-06-10",
+      "subject": "Merge pull request #1168 from aspen-ai-org/yash/eng-525-1-updating-the-dtos-and-updateprompt-endpoint-to-include-the",
+      "pr": 1168,
+      "issues": [
+        "PLA-6093"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1168",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "edd50c810149504bf2f275aa4d0309db77315a78",
+      "date": "2026-06-10",
+      "subject": "Merge pull request #1166 from aspen-ai-org/yash/eng-530-updating-the-reseeding-id-and-rectifying-the-errors",
+      "pr": 1166,
+      "issues": [
+        "PLA-6092"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1166",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "dbf5af17f458f2c21f33a7acdbd9d10075c4e18b",
+      "date": "2026-06-10",
+      "subject": "Merge pull request #1187 from aspen-ai-org/yash/eng-549-adding-logs-for-summary-auditor-json-extraction",
+      "pr": 1187,
+      "issues": [
+        "PLA-6091"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1187",
+      "scoring_scope": "excluded",
+      "exclusion_reason": "Summary auditor logging is ancillary, not scored."
+    },
+    {
+      "commit": "26fb098efab746d40513ad09d55f7ea5307d5ec6",
+      "date": "2026-06-11",
+      "subject": "Merge pull request #1165 from aspen-ai-org/simar/eng-455-fix-prefix-validation-for-all-prompt-tokens",
+      "pr": 1165,
+      "issues": [
+        "PLA-6090"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1165",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "767557667ad070ed488946eae1f665cb2f2870d1",
+      "date": "2026-06-11",
+      "subject": "Merge pull request #1170 from aspen-ai-org/yash/eng-526-2-create-a-new-endpoint-to-edit-friendly-name-for-a-prompt",
+      "pr": 1170,
+      "issues": [
+        "PLA-6089"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1170",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "99c3ca895cbb94b9cacefa3a57e5e594da5108ba",
+      "date": "2026-06-11",
+      "subject": "Merge pull request #1198 from aspen-ai-org/yash/eng-527-3-adding-a-modal-to-add-prompt-version-name",
+      "pr": 1198,
+      "issues": [
+        "PLA-6088"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1198",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "51c71fe65f9e7fd88f0eed6a860a53769a0f7fe1",
+      "date": "2026-06-11",
+      "subject": "Merge pull request #1180 from aspen-ai-org/simar/eng-541-update-the-cache-implementation-and-prompt-flow-across",
+      "pr": 1180,
+      "issues": [
+        "PLA-6087"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1180",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5fe2e880e5062e7a0d875eba190db0057f2cb6c5",
+      "date": "2026-06-16",
+      "subject": "Merge pull request #1204 from aspen-ai-org/simar/eng-554-investigate-creating-endpoint-that-enables-the-user-to-fetch",
+      "pr": 1204,
+      "issues": [
+        "PLA-6180"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1204",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "6a11052aa8517207af0ebf0881f0ae987375442a",
+      "date": "2026-06-17",
+      "subject": "Merge pull request #1226 from aspen-ai-org/simar/eng-585-add-jsonignore-to-all-prompttokens-to-fix-the-backward-nav",
+      "pr": 1226,
+      "issues": [
+        "PLA-6177"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1226",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "38e114ecbf62f6801aa77073583d862d41d83ce8",
+      "date": "2026-06-17",
+      "subject": "Merge pull request #1201 from aspen-ai-org/yash/eng-528-4-adding-a-button-to-enable-editing-prompt-version-name",
+      "pr": 1201,
+      "issues": [
+        "PLA-6181"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1201",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3acd196225ee6db67cd59e4f417c906f576fc40e",
+      "date": "2026-06-18",
+      "subject": "Merge pull request #1228 from aspen-ai-org/simar/eng-586-adjust-eager-loading-paradigm-to-be-used-for-the-db-fallback",
+      "pr": 1228,
+      "issues": [
+        "PLA-6175"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1228",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "589c7c79858f92c6f50dc2efd4b984853b1f2715",
+      "date": "2026-06-19",
+      "subject": "Merge pull request #1236 from aspen-ai-org/simar/eng-592-fix-incorrect-sharedprompt-standalone-usage-in-codebase",
+      "pr": 1236,
+      "issues": [
+        "PLA-6184"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1236",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7b459405c3912847fc88cd8759f85620573e5d39",
+      "date": "2026-06-22",
+      "subject": "Merge pull request #1243 from aspen-ai-org/simar/eng-583-update-shared-prompt-publishing-paradigm-to-use-token-name",
+      "pr": 1243,
+      "issues": [
+        "PLA-6172"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1243",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3609b02f907e7a1c397740452474845c964a6570",
+      "date": "2026-06-22",
+      "subject": "Merge pull request #1225 from aspen-ai-org/yash/eng-578-create-an-internal-prompt-client-to-fetch-prod-prompt-to-non",
+      "pr": 1225,
+      "issues": [
+        "PLA-6171"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1225",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1c5fe63c5309c875f106225cde724d972320be54",
+      "date": "2026-06-23",
+      "subject": "Merge pull request #1264 from aspen-ai-org/simar/eng-601-fix-production-prompt-fetching-logic",
+      "pr": 1264,
+      "issues": [
+        "PLA-6170"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1264",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9988c229c5407dcdf86a5d35b76ee83dbc140a90",
+      "date": "2026-06-24",
+      "subject": "Merge pull request #1255 from aspen-ai-org/simar/eng-555-create-a-new-sharedprompttoken-pivot-table",
+      "pr": 1255,
+      "issues": [
+        "PLA-6169"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1255",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "68c73db68556ed07be3e828be4687881e7d2d522",
+      "date": "2026-06-24",
+      "subject": "Merge pull request #1235 from aspen-ai-org/yash/eng-587-adding-version-number-field-to-promptexportdto-to-be-used-by",
+      "pr": 1235,
+      "issues": [
+        "PLA-6168"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1235",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "f329973b34a60d61c74b45fe712883049e5438f0",
+      "date": "2026-06-24",
+      "subject": "Merge pull request #1272 from aspen-ai-org/calvin/eng-607-investigate-non-verbatim-first-message-when-starting-up",
+      "pr": 1272,
+      "issues": [
+        "PLA-6166"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1272",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4edd9cb82440d98d7af1a8fcf8ad60190a058091",
+      "date": "2026-06-24",
+      "subject": "Merge pull request #1250 from aspen-ai-org/yash/eng-599-create-a-new-frontend-test-endpoint-to-pull-prompts-from",
+      "pr": 1250,
+      "issues": [
+        "PLA-6165"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1250",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "219cda00abc8286c160d3f0c674f23871021bc36",
+      "date": "2026-06-24",
+      "subject": "Merge pull request #1252 from aspen-ai-org/yash/eng-574-create-an-end-to-end-test-to-ensure-prompts-are-being",
+      "pr": 1252,
+      "issues": [
+        "PLA-6164"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1252",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7cd93ed38a337d5cdbd02774072cf39eb428dda0",
+      "date": "2026-06-25",
+      "subject": "Merge pull request #1251 from aspen-ai-org/simar/eng-584-modify-the-shared-prompt-fetching-logic-to-use-new-table",
+      "pr": 1251,
+      "issues": [
+        "PLA-6163"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1251",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "240f9472767690ddd1b7f6f9aa8ecddf29fe4cd3",
+      "date": "2026-06-25",
+      "subject": "Merge pull request #1269 from aspen-ai-org/simar/eng-614-update-conditional-tokens-logic-and-wrap-contextualmessage",
+      "pr": 1269,
+      "issues": [
+        "PLA-6162"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1269",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bf17a7543883f7d6c859b9f94c62733b69b09d8e",
+      "date": "2026-06-25",
+      "subject": "Merge pull request #1281 from aspen-ai-org/simar/eng-635-create-new-repo-and-update-backend-for-the-new-shared-prompt",
+      "pr": 1281,
+      "issues": [
+        "PLA-6161"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1281",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e14b700eaba8c4b88ee0fab4b03fe69814f40e96",
+      "date": "2026-06-25",
+      "subject": "Merge pull request #1311 from aspen-ai-org/yash/eng-663-fixing-summary-auditor-json-extraction-issue",
+      "pr": 1311,
+      "issues": [
+        "PLA-6160"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1311",
+      "scoring_scope": "excluded",
+      "exclusion_reason": "Summary auditor extraction fix is ancillary, not scored."
+    },
+    {
+      "commit": "4f115bc921999071cc3090b160115e5a90595466",
+      "date": "2026-06-28",
+      "subject": "Merge pull request #1273 from aspen-ai-org/yash/eng-575-register-extraction-prompts",
+      "pr": 1273,
+      "issues": [
+        "PLA-6159"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1273",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "47909ab5080a51b7a8d878d45de81fd5de6e605b",
+      "date": "2026-06-28",
+      "subject": "Merge pull request #1289 from aspen-ai-org/simar/eng-556-create-ui-that-displays-all-prompt-types-affected-by-shared",
+      "pr": 1289,
+      "issues": [
+        "PLA-6158"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1289",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "cdbe399e8f40f5512d145f13ce3747320b1de674",
+      "date": "2026-06-28",
+      "subject": "Merge pull request #1313 from aspen-ai-org/simar/eng-556-create-ui-that-displays-all-prompt-types-affected-by-shared-2",
+      "pr": 1313,
+      "issues": [
+        "PLA-6158"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1313",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5bc719015ee68e28c566761c1d09c5871f6c11da",
+      "date": "2026-06-29",
+      "subject": "Merge pull request #1278 from aspen-ai-org/yash/eng-576-register-summaryauditor-prompt",
+      "pr": 1278,
+      "issues": [
+        "PLA-6156"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1278",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d7ae1227259ca03ac63f1f591e449160211b1fb0",
+      "date": "2026-06-29",
+      "subject": "Merge pull request #1327 from aspen-ai-org/simar/eng-688-fix-e2e-sharedprompt-playwright-test-error",
+      "pr": 1327,
+      "issues": [
+        "PLA-6154"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1327",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "0b0804b5e041c6cd1b96dfc2ff2b263d74ffdeab",
+      "date": "2026-06-30",
+      "subject": "Merge pull request #1284 from aspen-ai-org/yash/eng-647-update-promptdetails-dtorepo-method-and-controller-to",
+      "pr": 1284,
+      "issues": [
+        "PLA-6150"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1284",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "af0092c575c4c5f8456e62687591d4a0c0451a42",
+      "date": "2026-06-30",
+      "subject": "Merge pull request #1322 from aspen-ai-org/simar/eng-588-register-internalpromptclient-and-wire-it-up-for-non-prod",
+      "pr": 1322,
+      "issues": [
+        "PLA-6193",
+        "PLA-6195",
+        "PLA-6192",
+        "PLA-6194"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1322",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "315b2d787db7aa0ac6675783873d79a195667360",
+      "date": "2026-07-02",
+      "subject": "Merge pull request #1330 from aspen-ai-org/yash/eng-536-frontend-updates-to-add-the-ability-to-view-all-prompt",
+      "pr": 1330,
+      "issues": [
+        "PLA-6197"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1330",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4f7c9b9f09af4faf94bbe42ba19d7e187cebf234",
+      "date": "2026-07-02",
+      "subject": "Merge pull request #1347 from aspen-ai-org/simar/pla-6216-add-new-isrequiredforcall-bool-column-to-the-prompttype",
+      "pr": 1347,
+      "issues": [
+        "PLA-6216"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1347",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "6a98fd4ee2d6d61f4f88b1c8720354639d1627ed",
+      "date": "2026-07-06",
+      "subject": "Merge pull request #1344 from aspen-ai-org/simar/pla-6215-update-the-getalldeployedprompts-method-to-pass-the-version",
+      "pr": 1344,
+      "issues": [
+        "PLA-6215"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1344",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "3c2bc5c90fcf6c875f6eff9b50ee38652f426a95",
+      "date": "2026-07-06",
+      "subject": "Merge pull request #1370 from aspen-ai-org/yash/pla-6251-removing-prompttype-enum-checks-in-prompt-controller",
+      "pr": 1370,
+      "issues": [
+        "PLA-6251"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1370",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "688386ee6857a10c5e9a937da1b2bb6faec10ecc",
+      "date": "2026-07-06",
+      "subject": "Merge pull request #1355 from aspen-ai-org/simar/pla-6217-update-prompttypedefaults-seedingdata-and-the-new-dto-with",
+      "pr": 1355,
+      "issues": [
+        "PLA-6217"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1355",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "870eb7db05742a04c5ea6624cf2fb51e19010f2f",
+      "date": "2026-07-06",
+      "subject": "Merge pull request #1329 from aspen-ai-org/simar/eng-684-update-the-lazy-loading-path-in-promptprovider-to-use",
+      "pr": 1329,
+      "issues": [
+        "PLA-6196"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1329",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "beddde1af95929272232a7fc8c3ce154f3fc2874",
+      "date": "2026-07-08",
+      "subject": "Merge pull request #1358 from aspen-ai-org/simar/pla-6218-create-a-new-ts-partition-for-the-callrequiredprompts-and",
+      "pr": 1358,
+      "issues": [
+        "PLA-6218"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1358",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "a2cef517c4abbd120ef8c4c11315589208dddc13",
+      "date": "2026-07-08",
+      "subject": "Merge pull request #1385 from aspen-ai-org/yash/pla-6186-register-alldetailsasbulletedlistsystemprompt",
+      "pr": 1385,
+      "issues": [
+        "PLA-6186"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1385",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "28513c5c5db776d1a39cc8d0d9deeb920b905a6c",
+      "date": "2026-07-08",
+      "subject": "Merge pull request #1354 from aspen-ai-org/yash/eng-698-highlight-prompt-tokens-in-lexical-text-area",
+      "pr": 1354,
+      "issues": [
+        "PLA-6173"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1354",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9a95a59689d42b7fa4910bc2b043ea77a2d23427",
+      "date": "2026-07-08",
+      "subject": "Merge pull request #1367 from aspen-ai-org/simar/pla-6219-add-new-dbcontext-to-avoid-db-concurrency-issues-using-the",
+      "pr": 1367,
+      "issues": [
+        "PLA-6219"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1367",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "24fdd1a5f784dfce734a798d3a792b8af0a11b58",
+      "date": "2026-07-08",
+      "subject": "Merge pull request #1378 from aspen-ai-org/simar/pla-6220-update-promptprovider-to-ensure-failure-scenarios-still-work",
+      "pr": 1378,
+      "issues": [
+        "PLA-6220"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1378",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1f9e796892149c3514b7df6382326cc010104204",
+      "date": "2026-07-08",
+      "subject": "Merge pull request #1382 from aspen-ai-org/simar/pla-6252-remove-ts-seeding-from-sampledatainitializer-and-create-a",
+      "pr": 1382,
+      "issues": [
+        "PLA-6252"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1382",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "75a7238520c771e43f32c0245b1641ae0d0aa8e6",
+      "date": "2026-07-09",
+      "subject": "Merge pull request #1383 from aspen-ai-org/yash/pla-6077-update-pompt-saving-validation-to-add-an-assertion-to-ensure",
+      "pr": 1383,
+      "issues": [
+        "PLA-6077"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1383",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "042673d7bd766e8ed946ab96350dc6d1274e97ea",
+      "date": "2026-07-09",
+      "subject": "Merge pull request #1390 from aspen-ai-org/simar/pla-6260-investigate-sharedprompt-eager-loading-paradigm",
+      "pr": 1390,
+      "issues": [
+        "PLA-6260"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1390",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "58ac027f5b9ac45250e8ff214b3e0330eedb46da",
+      "date": "2026-07-09",
+      "subject": "Merge pull request #1412 from aspen-ai-org/simar/pla-6306-fix-shared-prompt-partition-paradigm",
+      "pr": 1412,
+      "issues": [
+        "PLA-6306"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1412",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5cbe2c2d1f200f8fae14f30a5505185b3d81152f",
+      "date": "2026-07-10",
+      "subject": "Merge pull request #1420 from aspen-ai-org/simar/pla-6307-update-twilio-call-path-to-update-promptprpvider-when-a-call",
+      "pr": 1420,
+      "issues": [
+        "PLA-6307"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1420",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "400849afe9b1051f8a53896426fbc27c5f258ceb",
+      "date": "2026-07-10",
+      "subject": "Merge pull request #1416 from aspen-ai-org/simar/pla-6309-add-frontend-validation-for-not-publishing-a-prompt-that-is",
+      "pr": 1416,
+      "issues": [
+        "PLA-6309"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1416",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9987529fd7119fdcec0e59d9bc0f72332eeec6f9",
+      "date": "2026-07-13",
+      "subject": "Merge pull request #1413 from aspen-ai-org/yash/pla-6302-adding-backend-functionality-to-modify-prompt-constants",
+      "pr": 1413,
+      "issues": [
+        "PLA-6302"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1413",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "ce2390a23be12c165c6d446f46ce5775af5dc5de",
+      "date": "2026-07-13",
+      "subject": "Merge pull request #1423 from aspen-ai-org/yash/pla-6303-updating-frontend-to-allow-users-to-add-remove-and-update",
+      "pr": 1423,
+      "issues": [
+        "PLA-6303"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1423",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "759bf0cb3bfcb88440a9ea3d3f4ba0ed5bbe47bc",
+      "date": "2026-07-13",
+      "subject": "Merge pull request #1433 from aspen-ai-org/yash/pla-6316-shared-prompt-token-highlighting",
+      "pr": 1433,
+      "issues": [
+        "PLA-6316"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1433",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "132a951f0fc5f472c3ffd35e0880d1bd30f345e3",
+      "date": "2026-07-14",
+      "subject": "Merge pull request #1459 from aspen-ai-org/simar/pla-6319-remove-the-preview-button-from-the-prompteditor-page",
+      "pr": 1459,
+      "issues": [
+        "PLA-6319"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1459",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "7aa1e5b4e94ea8221e5e360e6a7ec56a928d35cf",
+      "date": "2026-07-14",
+      "subject": "Merge pull request #1478 from aspen-ai-org/yash/pla-6324-remove-fk-reference-to-systemprompttypes-table-from",
+      "pr": 1478,
+      "issues": [
+        "PLA-6324"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1478",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "53d8f05105ec2a082160228db801e3890872616d",
+      "date": "2026-07-29",
+      "subject": "Merge pull request #1566 from aspen-ai-org/simar/pla-6365-implement-script-resolver-to-fetch-prompt-types-that-need-to",
+      "pr": 1566,
+      "issues": [
+        "PLA-6365",
+        "PLA-6366"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1566",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "713f221669a6c579b92b6a808b29bcafadb2f274",
+      "date": "2026-07-30",
+      "subject": "Merge pull request #1479 from aspen-ai-org/yash/pla-6322-updating-backend-to-allow-duplicating-prompt-types",
+      "pr": 1479,
+      "issues": [
+        "PLA-6322"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1479",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "f62ed84aff0e1719ce9a36bb3c2631692cbd956d",
+      "date": "2026-07-30",
+      "subject": "Merge pull request #1499 from aspen-ai-org/yash/pla-6323-adding-frontend-functionality-to-duplicate-prompt-types",
+      "pr": 1499,
+      "issues": [
+        "PLA-6323"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1499",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "ade8306008e57d6634cf3a81947a81a59c932d21",
+      "date": "2026-07-30",
+      "subject": "Merge pull request #1429 from aspen-ai-org/simar/pla-6312-investigate-and-refactor-promptprovider-to-follow",
+      "pr": 1429,
+      "issues": [
+        "PLA-6312"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1429",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bcc64967ae85afbed71b97a6078aabcdf50296f5",
+      "date": "2026-07-30",
+      "subject": "Merge pull request #1580 from aspen-ai-org/simar/pla-6367-remove-callrequiredprompts-partition-and-remove-unused-flags",
+      "pr": 1580,
+      "issues": [
+        "PLA-6367"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1580",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1df4430b496c6a3750837dfad2d2a18a78cfe42a",
+      "date": "2026-08-11",
+      "subject": "Merge pull request #1645 from aspen-ai-org/simar/pla-6389-investigate-and-refactor-promptprovider-to-use-a-single",
+      "pr": 1645,
+      "issues": [
+        "PLA-6389"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1645",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9b6b477752a4a6588471b95605a45fc537c9fe0e",
+      "date": "2026-08-21",
+      "subject": "Merge pull request #1697 from aspen-ai-org/simar/pla-6407-update-prompt-tests-to-use-production-prompts-rather-than",
+      "pr": 1697,
+      "issues": [
+        "PLA-6407"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1697",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    }
+  ]
+}

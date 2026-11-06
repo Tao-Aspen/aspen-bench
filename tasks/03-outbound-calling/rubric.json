@@ -1,0 +1,177 @@
+{
+  "task": "03-outbound-calling",
+  "scale": {
+    "0": "Absent, fundamentally incorrect, or breaks the required flow.",
+    "1": "Partial scaffolding or happy-path fragments with major gaps.",
+    "2": "Substantial working behavior with material integration or failure-path gaps.",
+    "3": "Complete core flow with only limited, evidenced robustness or regression gaps.",
+    "4": "Complete, integrated, and supported by convincing evidence for the stated scenarios."
+  },
+  "scoring": "sum(weight * level / 4), computed by the orchestrator; code similarity is not a criterion",
+  "criteria": [
+    {
+      "id": "direction",
+      "weight": 8,
+      "title": "Immutable agent direction and portal affordances",
+      "reference_prs": [
+        1938,
+        1975,
+        1987,
+        1990,
+        2000
+      ],
+      "scenarios": "Create/duplicate either direction; existing agents remain inbound; reject phone assignment and direction changes; dropdown excludes unpublished/inbound agents."
+    },
+    {
+      "id": "publication",
+      "weight": 10,
+      "title": "Outbound storage, retrieval and lifecycle",
+      "reference_prs": [
+        1940,
+        1958,
+        1998,
+        2002,
+        2007,
+        2160,
+        2180,
+        2216
+      ],
+      "scenarios": "Publish without inbound number; resolve by organization and AgentId; unpublish/archive invalidates DB/table/cache availability; repeated/concurrent operations and inbound fallback regressions."
+    },
+    {
+      "id": "portal",
+      "weight": 8,
+      "title": "Dialing and history experience",
+      "reference_prs": [
+        1840,
+        1839,
+        1843,
+        1854,
+        1856,
+        1846,
+        1863,
+        1880,
+        1872,
+        1891,
+        1896,
+        1902
+      ],
+      "scenarios": "Place call through typed client; validation and tenant isolation; history includes agent, destination, caller ID, outcome and initiator; outbound lead labels."
+    },
+    {
+      "id": "draft",
+      "weight": 8,
+      "title": "Saved-draft calling and caller context",
+      "reference_prs": [
+        1974,
+        1997,
+        1983,
+        1922,
+        1957
+      ],
+      "scenarios": "Call current saved draft without publication, persist required start node/context, require save before text/call testing, preserve tenant isolation and current script selection. Locate additional test-call PRs in the ledger."
+    },
+    {
+      "id": "callerid",
+      "weight": 10,
+      "title": "Organization caller ID and nullable lead relations",
+      "reference_prs": [
+        2120,
+        2121,
+        2123,
+        2125
+      ],
+      "scenarios": "Read caller ID at initiation; changed number applies without publish; missing or foreign number fails before dialing; new-org opt-in and local seed wiring; valid outbound lead without inbound phone FK."
+    },
+    {
+      "id": "orchestration",
+      "weight": 10,
+      "title": "Real outbound orchestration and cleanup",
+      "reference_prs": [
+        1871,
+        1877,
+        2006,
+        2035,
+        2012,
+        2023
+      ],
+      "scenarios": "New room/dial path starts agent at correct lifecycle event; unanswered SIP and failed initialization clean resources; existing inbound, attach and stress paths remain functional."
+    },
+    {
+      "id": "background",
+      "weight": 8,
+      "title": "Scoped async execution and shutdown accounting",
+      "reference_prs": [
+        1909,
+        1919,
+        1937,
+        2034
+      ],
+      "scenarios": "HTTP request ends while background call continues with live scoped dependencies; immediate completion/startup failure/cancellation cannot leak or underflow active count; shutdown waits correctly."
+    },
+    {
+      "id": "classification",
+      "weight": 10,
+      "title": "Call-scoped AMD transcript state and verdicts",
+      "reference_prs": [
+        1965,
+        1978,
+        1984,
+        1981,
+        1995,
+        2058,
+        2094,
+        2164
+      ],
+      "scenarios": "Partial/final transcript sequences, initial humanlike greeting, sensible second turn, unknown/error and later machine verdicts; no arbitrary global deadline; final human stops detection; scopes do not mix calls."
+    },
+    {
+      "id": "speech",
+      "weight": 10,
+      "title": "Bounded speech gating and silence interaction",
+      "reference_prs": [
+        1994,
+        2105,
+        2122,
+        2164
+      ],
+      "scenarios": "Wait for recipient first; slow classifier gates speech only for bounded interval; cancellation and stale results; machine/human verdict arrival during speaking; silence fallback to voicemail."
+    },
+    {
+      "id": "outcomes",
+      "weight": 8,
+      "title": "Voicemail, spam and greeting hashes",
+      "reference_prs": [
+        1995,
+        2058,
+        2106
+      ],
+      "scenarios": "Machine leaves existing/default message and correct outcome; spam hangs up; greeting hashes use appropriate table keys with no duplicate per-call persistence; no requirement for spam navigation or customizable voicemail editor."
+    },
+    {
+      "id": "compatibility",
+      "weight": 6,
+      "title": "Cross-project correctness and regression control",
+      "reference_prs": [
+        1839,
+        1938,
+        2023,
+        2120,
+        2160
+      ],
+      "scenarios": "Compatible SQL/table contracts and old data, tenant scoping, authorization, DI, migration behavior, inbound billing/recording/lead regressions; accept baseline-compatible alternatives to later refactors."
+    },
+    {
+      "id": "verification",
+      "weight": 4,
+      "title": "Deterministic behavioral tests",
+      "reference_prs": [
+        1902,
+        2058,
+        1937,
+        2034
+      ],
+      "scenarios": "Mocks/fakes for external providers, call lifecycle and transcript race tests, portal/publish/draft cases; no real calls, production mutation, or paid prompt suite."
+    }
+  ]
+}

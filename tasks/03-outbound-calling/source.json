@@ -1,0 +1,49 @@
+{
+  "task": "03-outbound-calling",
+  "repository": "https://github.com/aspen-ai-org/AspenAI",
+  "base_commit": "2dbc29827b91df67b912442e545f032ad16e7cad",
+  "base_date": "2026-09-02T20:26:17Z",
+  "first_project_merge": "b3a1f2e4f01243b764ed7e69bcfb28d30efc0bca",
+  "reference_commit": "44bd24123c48ee94f8ebaed85691d88ab35daf30",
+  "reference_date": "2026-10-20T21:13:32Z",
+  "baseline_policy": "Exact full main-branch tree immediately before the first linked project implementation merge, with all ancestor history. Only the current AGENTS.md and CLAUDE.md instruction files are overlaid in a separate commit. Existing prototypes and prerequisites are intentionally retained.",
+  "reference_policy": "Actual full merged main-branch tree frozen at project completion (tasks 1 and 2), or last included completed-issue merge (task 3). The interval includes unrelated work; never grade the whole-tree difference. Use the scoped rubric, linked PR ledger, final behavior, and tests. References may rely on unrelated refactors absent from the starting tree; accept solutions adapted to baseline architecture.",
+  "scope_note": "Only completed issue slices of the five source projects are in scope; unfinished webhook/API-key, spam-navigation, and custom-voicemail follow-on projects are excluded.",
+  "projects": [
+    {
+      "id": "P-PLA-593",
+      "name": "Build Outbound Call Backend Functionality",
+      "url": "https://linear.app/aspen-ai/project/build-outbound-call-backend-functionality-16e0cba0e122",
+      "status_at_freeze": "In Progress",
+      "completed_issue_count": 14
+    },
+    {
+      "id": "P-ENG-609",
+      "name": "Inbound vs. Outbound Agents",
+      "url": "https://linear.app/aspen-ai/project/inbound-vs-outbound-agents-edcaad388c32",
+      "status_at_freeze": "In Progress",
+      "completed_issue_count": 24
+    },
+    {
+      "id": "P-ENG-611",
+      "name": "Answering Machine Detection",
+      "url": "https://linear.app/aspen-ai/project/answering-machine-detection-f46780b734f4",
+      "status_at_freeze": "In Progress",
+      "completed_issue_count": 13
+    },
+    {
+      "id": "P-ENG-592",
+      "name": "Build Frontend Portal to Trigger Outbound Call",
+      "url": "https://linear.app/aspen-ai/project/build-frontend-portal-to-trigger-outbound-call-600abc1d72d5",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 13
+    },
+    {
+      "id": "P-ENG-652",
+      "name": "Assigning Numbers and Making Outbound Calls",
+      "url": "https://linear.app/aspen-ai/project/assigning-numbers-and-making-outbound-calls-f5e5416fc216",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 5
+    }
+  ]
+}

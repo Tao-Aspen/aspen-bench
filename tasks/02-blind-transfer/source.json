@@ -1,0 +1,21 @@
+{
+  "task": "02-blind-transfer",
+  "repository": "https://github.com/aspen-ai-org/AspenAI",
+  "base_commit": "d9ce1d18585bad56fe7e797678a261527635ccdc",
+  "base_date": "2026-04-01T15:37:19Z",
+  "first_project_merge": "412c7693314900c6973e6276535fc30ccb3483fc",
+  "reference_commit": "2ee1e253e700cab276787ea1ce6dadaf4142378b",
+  "reference_date": "2026-07-28T14:25:44Z",
+  "baseline_policy": "Exact full main-branch tree immediately before the first linked project implementation merge, with all ancestor history. Only the current AGENTS.md and CLAUDE.md instruction files are overlaid in a separate commit. Existing prototypes and prerequisites are intentionally retained.",
+  "reference_policy": "Actual full merged main-branch tree frozen at project completion (tasks 1 and 2), or last included completed-issue merge (task 3). The interval includes unrelated work; never grade the whole-tree difference. Use the scoped rubric, linked PR ledger, final behavior, and tests. References may rely on unrelated refactors absent from the starting tree; accept solutions adapted to baseline architecture.",
+  "scope_note": "Earlier prototypes and foundational LiveKit/prompt code are part of the starting application; the requested project must be completed on top of them.",
+  "projects": [
+    {
+      "id": "P-PRO-229",
+      "name": "Blind Transfer From Script",
+      "url": "https://linear.app/aspen-ai/project/blind-transfer-from-script-1e83df77cd07",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 120
+    }
+  ]
+}

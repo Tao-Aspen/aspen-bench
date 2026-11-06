@@ -1,0 +1,555 @@
+{
+  "task": "02-blind-transfer",
+  "note": "Linked PRs verified reachable from the frozen main branch. These are provenance anchors, not a patch to apply wholesale. Unrelated changes and earlier superseded approaches do not define requirements. Read final reference code for current behavior. Some historical issues were moved between teams and their IDs differ from branch names.",
+  "projects": [
+    {
+      "id": "P-PRO-229",
+      "name": "Blind Transfer From Script",
+      "url": "https://linear.app/aspen-ai/project/blind-transfer-from-script-1e83df77cd07",
+      "status_at_freeze": "Completed",
+      "completed_issue_count": 120
+    }
+  ],
+  "commits": [
+    {
+      "commit": "412c7693314900c6973e6276535fc30ccb3483fc",
+      "date": "2026-04-02",
+      "subject": "Merge pull request #723 from aspen-ai-org/jayanth/pro-5404-part-1-add-new-consts-and-enums-for-livetransfer-nodes",
+      "pr": 723,
+      "issues": [
+        "PRO-5404"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/723",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d046b586d6014a5ae7eb6ef6493a8be59ecb9f26",
+      "date": "2026-04-03",
+      "subject": "Merge pull request #724 from aspen-ai-org/jayanth/pro-5405-part-2-backend-validation-rules-to-handle-the-live-transfer",
+      "pr": 724,
+      "issues": [
+        "PRO-5405"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/724",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1c32ded13e8a5e0927c5e4ddc4fd02e30779d3c8",
+      "date": "2026-04-06",
+      "subject": "Merge pull request #734 from aspen-ai-org/jayanth/pro-5406-part-3-frontend-implementation-for-livetransfernode",
+      "pr": 734,
+      "issues": [
+        "PRO-5406"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/734",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e7d11984af3049200969a1f1a3260f2e5b6e1cf1",
+      "date": "2026-04-07",
+      "subject": "Merge pull request #731 from aspen-ai-org/Roger/pro-5399-fix-the-internal-recorder",
+      "pr": 731,
+      "issues": [
+        "PRO-5399"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/731",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9b0605ca5e77986b848ec9b90d23eee64663f738",
+      "date": "2026-04-10",
+      "subject": "Merge pull request #747 from aspen-ai-org/jayanth/pro-5407-test-suite-for-livetransfernode",
+      "pr": 747,
+      "issues": [
+        "PRO-5407"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/747",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "fae10d4d96ef899144317157825328793d2c43c0",
+      "date": "2026-04-13",
+      "subject": "Merge pull request #769 from aspen-ai-org/jayanth/pro-5498-p2-filter-outbound-sip-in-handleinboundcall",
+      "pr": 769,
+      "issues": [
+        "PRO-5498"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/769",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "619f642b63e4d88cf5cd9d980c610c0b497aa717",
+      "date": "2026-04-13",
+      "subject": "Merge pull request #782 from aspen-ai-org/Roger/pro-5513-fix-null-exception-with-twilio-calls",
+      "pr": 782,
+      "issues": [
+        "PRO-5513"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/782",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "09a71c8e767eea2be9140832d95e3a1d75960df2",
+      "date": "2026-04-13",
+      "subject": "Merge pull request #770 from aspen-ai-org/jayanth/pro-5499-p3-operator-terminal-live-transfer",
+      "pr": 770,
+      "issues": [
+        "PRO-5499"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/770",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "f8b9e7736a673c1e87da5b72fa9709689735518a",
+      "date": "2026-04-16",
+      "subject": "Merge pull request #764 from aspen-ai-org/jayanth/pro-5497-p1-sip-call-chain-updates-sidecar-c-dtos-livekitservice",
+      "pr": 764,
+      "issues": [
+        "PRO-5497"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/764",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "561de7d2bbcdb68c297ae6573272924d630a5b52",
+      "date": "2026-04-16",
+      "subject": "Merge pull request #792 from aspen-ai-org/jayanth/pro-5500-p4-new-livetransferservice-wiring",
+      "pr": 792,
+      "issues": [
+        "PRO-5500"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/792",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "392b61c1598fc4a0c7d016d8635169770e2603cf",
+      "date": "2026-04-22",
+      "subject": "Merge pull request #832 from aspen-ai-org/jayanth/pro-5520-small-refactor-rename-livekitservice-to",
+      "pr": 832,
+      "issues": [
+        "PRO-5520"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/832",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "c0d54d800ecd98a4f93e263622e04da8f3821065",
+      "date": "2026-04-23",
+      "subject": "Merge pull request #785 from aspen-ai-org/abhinav/pro-5491-refactor-post-call-pipelines",
+      "pr": 785,
+      "issues": [
+        "PRO-5491"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/785",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4bf1d9a3a8d0247997e60026a4e5eefa6d13c487",
+      "date": "2026-04-28",
+      "subject": "Merge pull request #830 from aspen-ai-org/jayanth/pro-5521-live-transfer-handle-sip-status-codes-for-outbound-sip-calls",
+      "pr": 830,
+      "issues": [
+        "PRO-5521"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/830",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "302798e3f607e5ba60ddfd02d2daae76468e1eb2",
+      "date": "2026-05-04",
+      "subject": "Merge pull request #849 from aspen-ai-org/abhinav/pro-5559-refactor-post-call-task-pipeline-bot-pipeline",
+      "pr": 849,
+      "issues": [
+        "PRO-5559"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/849",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "5104de1f00740976813a373c0e6f5a02fd989cb8",
+      "date": "2026-05-04",
+      "subject": "Merge pull request #848 from aspen-ai-org/Roger/pro-5570-add-single-participant-audio-manager-that-manages-audio-of-a",
+      "pr": 848,
+      "issues": [
+        "PRO-5570"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/848",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9d525c65a5e759d73dfa220b1f068f59cff9d98f",
+      "date": "2026-05-06",
+      "subject": "Merge pull request #850 from aspen-ai-org/Roger/pro-5400-add-recording-alignment-buffer-to-match-outbound-audio-to",
+      "pr": 850,
+      "issues": [
+        "PRO-5400"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/850",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "85ff66b4ed02221ecde2c9c45a3d28651bf40727",
+      "date": "2026-05-07",
+      "subject": "Merge pull request #884 from aspen-ai-org/abhinav/pro-5551-remove-endcalltask-services-logic-which-will-be-obsolete",
+      "pr": 884,
+      "issues": [
+        "PRO-5551"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/884",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "25992682227b77abb17911ad45190c7ab37a22db",
+      "date": "2026-05-12",
+      "subject": "Merge pull request #856 from aspen-ai-org/Roger/pro-5401-add-recording-manager-which-manages-all-participants-in-a",
+      "pr": 856,
+      "issues": [
+        "PRO-5401"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/856",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "db4672f8ad745bb0686b361085bb11f1cc97658e",
+      "date": "2026-05-12",
+      "subject": "Merge pull request #900 from aspen-ai-org/jayanth/pro-5633-add-hang-up-and-room-clean-up-logic-for-blind-transfer",
+      "pr": 900,
+      "issues": [
+        "PRO-5633"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/900",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "c879a0a23e018bfcac8277f04eb07cbae6ed5a7f",
+      "date": "2026-05-12",
+      "subject": "Merge pull request #873 from aspen-ai-org/Roger/pro-5402-add-logic-to-send-separate-participants-audio-from-sidecar",
+      "pr": 873,
+      "issues": [
+        "PRO-5402"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/873",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "cf5769654a6dbd9c69c14948656ade36a84278f7",
+      "date": "2026-05-14",
+      "subject": "Merge pull request #907 from aspen-ai-org/abhinav/pro-5583-implement-integration-tests-for-post-call-task-pipeline",
+      "pr": 907,
+      "issues": [
+        "PRO-5583"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/907",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "cfdb50345458f4704fdb38d1fd4c43f0f8d2a67e",
+      "date": "2026-05-18",
+      "subject": "Merge pull request #960 from aspen-ai-org/Roger/pro-5641-create-contracts-and-dtos-for-call-recording-segmentation2",
+      "pr": 960,
+      "issues": [
+        "PRO-5641"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/960",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "f336671a927eddfa61f355df4c32a6f29397e29e",
+      "date": "2026-05-20",
+      "subject": "Merge pull request #961 from aspen-ai-org/jayanth/pro-5647-pr-1-adding-speakertype-enum-conversationblock-conversion-v3",
+      "pr": 961,
+      "issues": [
+        "PRO-5647"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/961",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "55d3b95e0b561bff9f6a6c822752fee43894552e",
+      "date": "2026-05-20",
+      "subject": "Merge pull request #971 from aspen-ai-org/Roger/pro-5642-implement-segmented-recording-logic-based-on-implementation2",
+      "pr": 971,
+      "issues": [
+        "PRO-5642"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/971",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "509191fcf74e28ad5f1b7c1d144fe94027a8f8ae",
+      "date": "2026-05-21",
+      "subject": "Merge pull request #995 from aspen-ai-org/david/pro-5427-add-mid-call-tasks-pipeline-blind-transfer",
+      "pr": 995,
+      "issues": [
+        "PRO-5427"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/995",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "9c400f4094844046d30dd3f7388efff6e2e4a352",
+      "date": "2026-05-22",
+      "subject": "Merge pull request #981 from aspen-ai-org/jayanth/pro-5648-pr-2-adding-live-transfer-segment-transcription-and-summary",
+      "pr": 981,
+      "issues": [
+        "PRO-5648"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/981",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "a3c81b48c5cf554f0efd4cca68792681774303cc",
+      "date": "2026-05-22",
+      "subject": "Merge pull request #994 from aspen-ai-org/jayanth/pro-5649-pr-3-adding-lt-segment-recordings-transcripts-and-summaries",
+      "pr": 994,
+      "issues": [
+        "PRO-5649"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/994",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "65ba9d33e0d72daddcfd3bde8311e50f58c9084c",
+      "date": "2026-05-22",
+      "subject": "Merge pull request #1008 from aspen-ai-org/abhinav/pro-5678-remove-obsolete-post-call-execution-code",
+      "pr": 1008,
+      "issues": [
+        "PRO-5678"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1008",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "bea50352556e2531b6992ee1479a7bb015ecb74e",
+      "date": "2026-05-22",
+      "subject": "Merge pull request #1025 from aspen-ai-org/david/pro-5693-rename-postcalltask-to-pipelinetask",
+      "pr": 1025,
+      "issues": [
+        "PRO-5693"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1025",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "57db1f8e706dfd91c6e58e6c921027e325fd48c1",
+      "date": "2026-05-26",
+      "subject": "Merge pull request #1051 from aspen-ai-org/jayanth/pro-5696-refactor-postcallcontextdto-to-contain-segment-entity-with",
+      "pr": 1051,
+      "issues": [
+        "PRO-5696"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1051",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e7c476d9683e5b6c27fdcacb60bfcad2c46a247e",
+      "date": "2026-05-29",
+      "subject": "Merge pull request #1055 from aspen-ai-org/abhinav/pro-5679-update-lead-in-newcase-with-callerparalegal-summary-details",
+      "pr": 1055,
+      "issues": [
+        "PRO-5679"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1055",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d116b4ec351329bb44c06a21ebc192560bc98ef4",
+      "date": "2026-05-29",
+      "subject": "Merge pull request #1061 from aspen-ai-org/jayanth/pro-5694-update-calloutcome-with-live-transfer-outcome-in-each",
+      "pr": 1061,
+      "issues": [
+        "PRO-5694"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1061",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "216445a4530117e284d89489f0f0109722097128",
+      "date": "2026-06-03",
+      "subject": "Merge pull request #1075 from aspen-ai-org/Roger/pro-5686-look-into-a-better-system-to-stop-alignment-buffers-and-2",
+      "pr": 1075,
+      "issues": [
+        "PRO-5686"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1075",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "32c4a97d2075e8bb0105ec166e534cd020effbfa",
+      "date": "2026-06-03",
+      "subject": "Merge pull request #1087 from aspen-ai-org/jayanth/pro-5695-refactor-lead-to-contain-segment-entity-with-transcript",
+      "pr": 1087,
+      "issues": [
+        "PRO-5695"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1087",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "4a61f82c9e19bc9f48fccdb2994d2acea02d2dbd",
+      "date": "2026-06-04",
+      "subject": "Merge pull request #1089 from aspen-ai-org/abhinav/pro-5697-delete-the-twilio-recording-for-outbound-calls-during-post",
+      "pr": 1089,
+      "issues": [
+        "PRO-5697"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1089",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e7b320123f8272d17e7a3537538cf5f1fc9ed170",
+      "date": "2026-06-05",
+      "subject": "Merge pull request #1096 from aspen-ai-org/Roger/pro-5699-investigate-bot-audio-quality-degradation-jitter-during-live",
+      "pr": 1096,
+      "issues": [
+        "PRO-5699"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1096",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "0604b35b04ec5b16d3bff915cb58893408bf0133",
+      "date": "2026-06-05",
+      "subject": "Merge pull request #1153 from aspen-ai-org/Roger/eng-457-update-starting-bot-internal-recording-to-account-for",
+      "pr": 1153,
+      "issues": [
+        "PRO-5740"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1153",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "df867710f36f845f70232f9080305b3045fc956c",
+      "date": "2026-06-05",
+      "subject": "Merge pull request #1119 from aspen-ai-org/tao/pro-5718-update-padding-in-new-lead-email-for-calls",
+      "pr": 1119,
+      "issues": [
+        "PRO-5718"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1119",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "de30baa718f2e03a236cbb8b7eebac7ddbfd5ebd",
+      "date": "2026-06-06",
+      "subject": "Merge pull request #1141 from aspen-ai-org/jayanth/pro-5688-small-refactor-rename-the-participanttypeenum-to",
+      "pr": 1141,
+      "issues": [
+        "PRO-5688"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1141",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "58771f0b9dba33f1a632c0aad23fe36b753ac78a",
+      "date": "2026-06-06",
+      "subject": "Merge pull request #1131 from aspen-ai-org/jayanth/pro-5719-fix-raw-call-transcripts-participants-reversed-for-botcaller",
+      "pr": 1131,
+      "issues": [
+        "PRO-5719"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1131",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "d98f8571b22fabd79b5bca785c1189b33cf1ab3f",
+      "date": "2026-06-08",
+      "subject": "Merge pull request #1145 from aspen-ai-org/Roger/eng-456-never-return-twilio-urls-as-the-publicly-accessible",
+      "pr": 1145,
+      "issues": [
+        "PRO-5737"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1145",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "c45873198a12640cbb6555d25317d691d81db95b",
+      "date": "2026-06-09",
+      "subject": "Merge pull request #1157 from aspen-ai-org/Roger/pro-5717-update-portal-authentication-cookies-to-expire-after-7-days",
+      "pr": 1157,
+      "issues": [
+        "PRO-5717"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1157",
+      "scoring_scope": "excluded",
+      "exclusion_reason": "Cookie lifetime change is unrelated to transfer behavior."
+    },
+    {
+      "commit": "4badc6e740019d38bc91609a9992e6ad1924e9f9",
+      "date": "2026-06-10",
+      "subject": "Merge pull request #1150 from aspen-ai-org/Roger/eng-431-refactor-twilio-call-recording-properties-to-a",
+      "pr": 1150,
+      "issues": [
+        "PRO-5739"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1150",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "e147ce1ac52f272eaa2126af0ba5baab62ddb527",
+      "date": "2026-06-10",
+      "subject": "Merge pull request #1140 from aspen-ai-org/tao/pro-5732-run-mid-call-tasks-in-parallel-with-live-transfer-message",
+      "pr": 1140,
+      "issues": [
+        "PRO-5732"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1140",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "b9568299822df49c4f71553e950ddbf401b2bd08",
+      "date": "2026-06-22",
+      "subject": "Merge pull request #1247 from aspen-ai-org/tao/pro-5757-dont-override-with-post-call-summary",
+      "pr": 1247,
+      "issues": [
+        "PRO-5757"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1247",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "f55b8768d9209c739be3195b0e600963a04715ba",
+      "date": "2026-06-29",
+      "subject": "Merge pull request #1321 from aspen-ai-org/Roger/pro-5813-add-call-provider-check-on-internal-recorder-tasks",
+      "pr": 1321,
+      "issues": [
+        "PRO-5813"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1321",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "1bb73d5a83346bf725cb2ee5471b543922cb5c7d",
+      "date": "2026-07-06",
+      "subject": "Merge pull request #1361 from aspen-ai-org/Roger/pro-5818-refactor-audiomixer-to-use-state-for-audio-relay",
+      "pr": 1361,
+      "issues": [
+        "PRO-5818"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1361",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "f1d084cfd2a5ed83aa50628306182dfd328cfa35",
+      "date": "2026-07-09",
+      "subject": "Merge pull request #1369 from aspen-ai-org/Roger/pro-5819-add-ringing-state-to-audiomixer",
+      "pr": 1369,
+      "issues": [
+        "PRO-5819"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1369",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    },
+    {
+      "commit": "6e616a6f7f2afedda6d2d73ec9105bb53bb2e09f",
+      "date": "2026-07-09",
+      "subject": "Merge pull request #1394 from aspen-ai-org/Roger/eng-707-create-new-trunk-and-setting-for-centralized-outbound",
+      "pr": 1394,
+      "issues": [
+        "ENG-707"
+      ],
+      "url": "https://github.com/aspen-ai-org/AspenAI/pull/1394",
+      "scoring_scope": "supporting evidence; score only behaviors requested in prompt.md and rubric.json"
+    }
+  ]
+}

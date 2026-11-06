@@ -1,0 +1,6 @@
+{
+  "argv": ["node", "/opt/aspen-bench/adapters/claude.mjs", "--model", "claude-sonnet-5-5", "--prompt", "{prompt}", "--workspace", "{workspace}", "--output", "{output}", "--max-turns", "200", "--timeout-seconds", "7100", "--tools", "Read,Write,Edit,Bash,Glob,Grep,NotebookEdit,TodoWrite"],
+  "timeout_seconds": 7200,
+  "env": {},
+  "pass_env": ["CLAUDE_CODE_OAUTH_TOKEN"]
+}

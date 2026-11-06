@@ -1,0 +1,6 @@
+**
+!Dockerfile.claude
+!package.json
+!package-lock.json
+!adapters/
+!adapters/claude.mjs

@@ -1,0 +1,6 @@
+{
+  "argv": ["python3", "/absolute/path/to/your_evaluator_adapter.py", "--prompt", "{prompt}", "--workspace", "{workspace}", "--output", "{output}"],
+  "timeout_seconds": 3600,
+  "env": {},
+  "pass_env": []
+}

@@ -1,0 +1,166 @@
+{
+  "task": "02-blind-transfer",
+  "scale": {
+    "0": "Absent, fundamentally incorrect, or breaks the required flow.",
+    "1": "Partial scaffolding or happy-path fragments with major gaps.",
+    "2": "Substantial working behavior with material integration or failure-path gaps.",
+    "3": "Complete core flow with only limited, evidenced robustness or regression gaps.",
+    "4": "Complete, integrated, and supported by convincing evidence for the stated scenarios."
+  },
+  "scoring": "sum(weight * level / 4), computed by the orchestrator; code similarity is not a criterion",
+  "criteria": [
+    {
+      "id": "script",
+      "weight": 8,
+      "title": "Transfer node end-to-end",
+      "reference_prs": [
+        723,
+        724,
+        734,
+        747,
+        770
+      ],
+      "scenarios": "Create, validate, save and publish a transfer node; execute it once as a terminal action; reject invalid destination config."
+    },
+    {
+      "id": "dialing",
+      "weight": 10,
+      "title": "Dialing and SIP routing",
+      "reference_prs": [
+        764,
+        769,
+        792,
+        830,
+        1394
+      ],
+      "scenarios": "Create outbound recipient in the current room; use destination and proper caller identity; filter callbacks so outbound legs do not spawn inbound agents; busy/rejected/failure statuses."
+    },
+    {
+      "id": "fallback",
+      "weight": 10,
+      "title": "Timeout, cancellation and voicemail fallback",
+      "reference_prs": [
+        792,
+        830,
+        900
+      ],
+      "scenarios": "Timeout immediately before/after answer; cancellation during dialing; late participant join; avoid contradictory transfer/fallback actions and orphan legs."
+    },
+    {
+      "id": "handoff",
+      "weight": 10,
+      "title": "Bot quiescence while humans speak",
+      "reference_prs": [
+        792,
+        900,
+        1140,
+        1361
+      ],
+      "scenarios": "Pending TTS, transcription, silence callbacks and async replies cease after bridge; recording continues; cancelled work cannot resume conversation."
+    },
+    {
+      "id": "participants",
+      "weight": 10,
+      "title": "Participant lifecycle and cleanup",
+      "reference_prs": [
+        900,
+        830
+      ],
+      "scenarios": "Caller leaves while dialing, recipient answers after caller left, either human leaves after bridge, duplicate and reordered events; room and scope cleanup are safe."
+    },
+    {
+      "id": "recording",
+      "weight": 10,
+      "title": "Participant audio alignment and recording continuity",
+      "reference_prs": [
+        848,
+        850,
+        856,
+        873,
+        1075,
+        1096,
+        1153,
+        1361,
+        1369
+      ],
+      "scenarios": "Separate tracks align correctly, queue clearing preserves timestamps, ringing/relay transitions do not corrupt audio, mixed and participant recordings survive handoff and termination."
+    },
+    {
+      "id": "segments",
+      "weight": 10,
+      "title": "Segment boundaries and speaker correctness",
+      "reference_prs": [
+        960,
+        961,
+        971,
+        1051,
+        1087,
+        1131,
+        1141
+      ],
+      "scenarios": "Bot/caller and human/caller segments have correct timestamps, labels and recording references; short/empty segments and interrupted transfer remain coherent."
+    },
+    {
+      "id": "midcall",
+      "weight": 8,
+      "title": "Mid-call persistence and external integration",
+      "reference_prs": [
+        995,
+        1140,
+        1247
+      ],
+      "scenarios": "Persist and send collected lead data at handoff; run without blocking transfer message unnecessarily; preserve collected bot details on subsequent processing."
+    },
+    {
+      "id": "postcall",
+      "weight": 8,
+      "title": "Post-call transcription, summaries and pipelines",
+      "reference_prs": [
+        785,
+        849,
+        884,
+        907,
+        981,
+        1055,
+        1008,
+        1025
+      ],
+      "scenarios": "Complete human segment transcription/summary and CRM update; retain bot segment; verify Function-compatible dependencies and voicemail/nontransfer paths."
+    },
+    {
+      "id": "presentation",
+      "weight": 6,
+      "title": "Lead outcomes and portal results",
+      "reference_prs": [
+        994,
+        1061,
+        1087,
+        1119
+      ],
+      "scenarios": "Portal/API expose separate segments and transfer outcome; display transcripts and summary per segment without swapping participants or hiding the bot record."
+    },
+    {
+      "id": "compatibility",
+      "weight": 6,
+      "title": "Safe data, recording access and integration",
+      "reference_prs": [
+        1089,
+        1145,
+        1150,
+        1321
+      ],
+      "scenarios": "Application recording URLs, authorization/tenant scope, provider-dependent recording selection, compatible migrations, safe cleanup of provider resources."
+    },
+    {
+      "id": "verification",
+      "weight": 4,
+      "title": "Regression coverage and code integration",
+      "reference_prs": [
+        747,
+        907,
+        995
+      ],
+      "scenarios": "Tests cover SIP and callback races, segmentation and orchestration with fakes; inspect DI registration and realistic runtime integration, not just isolated helper tests."
+    }
+  ]
+}

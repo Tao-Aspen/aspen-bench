@@ -1,0 +1,170 @@
+{
+  "task": "01-prompt-management",
+  "scale": {
+    "0": "Absent, fundamentally incorrect, or breaks the required flow.",
+    "1": "Partial scaffolding or happy-path fragments with major gaps.",
+    "2": "Substantial working behavior with material integration or failure-path gaps.",
+    "3": "Complete core flow with only limited, evidenced robustness or regression gaps.",
+    "4": "Complete, integrated, and supported by convincing evidence for the stated scenarios."
+  },
+  "scoring": "sum(weight * level / 4), computed by the orchestrator; code similarity is not a criterion",
+  "criteria": [
+    {
+      "id": "catalog",
+      "weight": 8,
+      "title": "Portal catalog and versioned editor",
+      "reference_prs": [
+        889,
+        892,
+        902,
+        910
+      ],
+      "scenarios": "Navigate from prompt list to editor; switch versions without mixing state; friendly names, published badges, routing and API mocks remain consistent."
+    },
+    {
+      "id": "versions",
+      "weight": 8,
+      "title": "Immutable published versions and draft editing",
+      "reference_prs": [
+        1082,
+        1091,
+        1136,
+        1168,
+        1170
+      ],
+      "scenarios": "Save unpublished content in place or as a new version; attempt direct mutation of deployed content; republish an older version without modifying its stored content."
+    },
+    {
+      "id": "tokens",
+      "weight": 10,
+      "title": "Token validation and conditional rendering",
+      "reference_prs": [
+        1073,
+        1079,
+        1165,
+        1383
+      ],
+      "scenarios": "Known required tokens, unknown tokens, multiline conditional blocks, constants versus JSON keys, and malformed token boundaries; ensure frontend and server agree."
+    },
+    {
+      "id": "shared",
+      "weight": 10,
+      "title": "Shared prompt identity and dependencies",
+      "reference_prs": [
+        1243,
+        1255,
+        1251,
+        1281,
+        1289,
+        1313,
+        1390,
+        1412
+      ],
+      "scenarios": "Two primary types share a token; fetch and deploy the shared prompt; inspect affected-type reporting and identity/partition separation; missing shared data must not resolve as a primary prompt."
+    },
+    {
+      "id": "publishing",
+      "weight": 10,
+      "title": "Publish, rollback and runtime storage consistency",
+      "reference_prs": [
+        1180,
+        1252,
+        1416
+      ],
+      "scenarios": "Publish a draft and then roll back; read through runtime storage and DB fallback; inspect write ordering and partial failure behavior rather than assuming an impossible cross-store transaction."
+    },
+    {
+      "id": "nonproduction",
+      "weight": 10,
+      "title": "Authenticated cross-environment fetching and version overrides",
+      "reference_prs": [
+        1160,
+        1204,
+        1225,
+        1235,
+        1264,
+        1322,
+        1329
+      ],
+      "scenarios": "Published default and explicit older version in separate calls; nonproduction eager and lazy requests; authorization and unavailable production endpoint; no global override leakage."
+    },
+    {
+      "id": "loading",
+      "weight": 10,
+      "title": "Script-aware eager loading and safe lazy caching",
+      "reference_prs": [
+        1344,
+        1367,
+        1378,
+        1566,
+        1429,
+        1580,
+        1645
+      ],
+      "scenarios": "Different scripts and concurrent calls need different prompt subsets; shared dependencies, lazy cache misses, missing rows, cancellation and EF context lifetime; inspect both correctness and redundant calls."
+    },
+    {
+      "id": "migration",
+      "weight": 8,
+      "title": "Managed source of truth and initialization",
+      "reference_prs": [
+        1149,
+        1382,
+        1697
+      ],
+      "scenarios": "Existing prompt catalog can be initialized; restarting locally does not silently replace managed versions; test/development overrides work with mocked clients; no paid prompt suite execution."
+    },
+    {
+      "id": "runtime",
+      "weight": 8,
+      "title": "Integration with bot and testing execution paths",
+      "reference_prs": [
+        1272,
+        1420,
+        1429,
+        1645,
+        1697
+      ],
+      "scenarios": "Trace LiveKit, Twilio and text/test initialization through prompt generation; detect implemented services that are never registered or invoked."
+    },
+    {
+      "id": "management",
+      "weight": 8,
+      "title": "Constants editing and type duplication",
+      "reference_prs": [
+        1413,
+        1423,
+        1479,
+        1499
+      ],
+      "scenarios": "Create/update/remove a constant and duplicate a type with token associations; reject invalid/conflicting input; maintain shared versus primary contracts."
+    },
+    {
+      "id": "compatibility",
+      "weight": 6,
+      "title": "Authorization, tenancy and additive schema integration",
+      "reference_prs": [
+        910,
+        1022,
+        1026,
+        1064,
+        1130,
+        1255
+      ],
+      "scenarios": "Inspect migrations, null handling for existing records, scoped services and controller authorization; do not require later unrelated schema or framework changes."
+    },
+    {
+      "id": "verification",
+      "weight": 4,
+      "title": "Meaningful automated coverage and maintainability",
+      "reference_prs": [
+        1028,
+        1072,
+        1116,
+        1252,
+        1327
+      ],
+      "scenarios": "Tests exercise failure paths and behavior across APIs/runtime/UI; distinguish actually executed checks from claims and unavailable infrastructure."
+    }
+  ]
+}
